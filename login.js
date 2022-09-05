@@ -48,7 +48,3 @@ document.querySelector("form").addEventListener("submit", getUserData);
 // Role : Student
 // Username : tarun.__7
 // Pass : Tarun@12
-
-// Role : Admin
-// Username : tailormamta56
-// Pass : Mamta@12
