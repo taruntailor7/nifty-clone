@@ -1,68 +1,76 @@
-body{
+body {
     background-image: url("https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png");
+    background-size: 100% 100%;
 }
 
 /* logobar start */
 #logobar img {
     display: block;
-   width: 7.2% ;
-    margin: auto;  
+    width: 7.2%;
+    margin: auto;
 }
+
 /*logo bar end*/
 /* parent login start */
 
 #parentLogin {
     display: flex;
     width: 70%;
-    border: 1px solid rgb(233,233,232);
+    border: 1px solid rgb(233, 233, 232);
     margin: auto;
     margin-top: 3%;
     border-radius: 10px;
-    
+
 }
-#header{
+
+#header {
     display: flex;
     align-items: center;
 }
 
 
-#firstdiv{
+#firstdiv {
     width: 50%;
-background-color:rgb(253,248,247);
-padding: 3%;
+    background-color: rgb(253, 248, 247);
+    padding: 3%;
 }
 
-#header span{
+#header span {
     background-color: #F99446;
     border-radius: 15px;
     color: whitesmoke;
     margin-right: 5px;
     font-size: 10px;
-    padding:5px;
-font-weight: bolder;
+    padding: 5px;
+    font-weight: bolder;
 }
-#loginimg{
+
+#loginimg {
     width: 100%;
 }
-#para{
+
+#para {
     margin-top: auto;
 }
+
 /* end */
 /* start login side*/
-#secondDiv{
+#secondDiv {
     width: 50%;
     padding: 6%;
-    background-color:white;
-  
+    background-color: white;
+
 }
-#secondDiv> label{
+
+#secondDiv>label {
     display: block;
     color: #767677;
-margin: 3% 2px;
-font-size:large;
-font-weight: bold;
+    margin: 3% 2px;
+    font-size: large;
+    font-weight: bold;
 }
-#forgot{
+
+#forgot {
     display: flex;
     justify-content: space-between;
     color: #767677;
@@ -70,22 +78,25 @@ font-weight: bold;
     margin: 1% 2px;
     align-items: center;
 
-    font-size:large;
-font-weight: bold;
+    font-size: large;
+    font-weight: bold;
 }
-#secondDiv h2{
+
+#secondDiv h2 {
     margin-top: auto;
 }
-#secondDiv input{
+
+#secondDiv input {
     width: 94%;
     padding: 3.5%;
     margin-bottom: 4%;
     font-size: medium;
     border: 2px solid silver;
     border-radius: 5px;
-    outline-color: rgb(59,181,166);
+    outline-color: rgb(59, 181, 166);
 }
-#submit{
+
+#submit {
     width: 103%;
     padding: 13px;
     background-color: rgb(131, 204, 195);
@@ -95,36 +106,43 @@ font-weight: bold;
     cursor: pointer;
     margin-bottom: 5%;
 }
-#google{
+
+#google {
     width: 50%;
     margin: auto;
-   display: flex;
-  color: #fa8932;
+    display: flex;
+    color: #fa8932;
 
 }
-#google img{
+
+#google img {
     width: 6.5%;
     margin: 0px 10px;
     font-weight: bolder;
 }
-#google:hover{
+
+#google:hover {
     text-decoration: 1px solid underline;
 }
-#sso{
+
+#sso {
     display: block;
     width: 38%;
-    margin:auto;
-   margin-top: 4%;
-   color: rgb(87,87,86);
+    margin: auto;
+    margin-top: 4%;
+    color: rgb(87, 87, 86);
 }
-#sso:hover{
+
+#sso:hover {
     text-decoration: underline;
 }
+
 #or {
     display: flex;
     flex-direction: row;
-    color: rgb(87,87,86);
+    color: rgb(87, 87, 86);
 }
+
 #or:before,
 #or:after {
     content: "";
@@ -132,22 +150,25 @@ font-weight: bold;
     border-bottom: 1px solid silver;
     margin: auto;
 }
-#dont{
-width: 50%;
-margin: auto;
-color: rgb(87,87,86);
+
+#dont {
+    width: 50%;
+    margin: auto;
+    color: rgb(87, 87, 86);
+    text-align: center;
 }
-#signupforfree{
+
+#signupforfree {
     display: block;
-    margin:auto;
-    /* width: 40%; */
-  
+    margin: auto;
     color: #F99446;
     background-color: white;
-    border: 1px solid silver;   
+    border: 1px solid silver;
     font-weight: bolder;
-    padding:10px 25px;
+    padding: 10px 25px;
     margin-top: 4%;
     cursor: pointer;
-    border-radius:5px;
+    border-radius: 5px;
 }
+/* end login side */
+
