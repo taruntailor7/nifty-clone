@@ -1,0 +1,368 @@
+
+.shubham-middle-section {
+    background-color: white;
+}
+
+.shubham-bottom-section {
+    background-color: #f5f7fa;
+}
+
+#aloneparentdiv {
+    height: 80vh;
+    width: 55%;
+    border: 1px solid rgb(0, 186, 171);
+    border-radius: 16px;
+    background-color: white;
+    margin: auto;
+    
+}
+
+#alonechilddiv {
+    height: 60vh;
+    width: 82%;
+    /* border: 1px solid rgb(0, 186, 171); */
+    border-radius: 16px;
+    background-color: white;
+    margin: 40px auto;
+}
+
+#alonechilddiv > div > img {
+    width: 50px;
+    display: block;
+    margin: 12px auto;
+}
+
+#alonechilddiv > div > h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: monospace;
+    margin: 6px 0px;
+}
+
+#alonechilddiv > div > p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: monospace;
+}
+
+.innerinputbox {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border: 1px solid#f5f7fa;
+    /* outline: none; */
+    border-radius: 16px;
+    padding: 6px 10px; 
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerinputbox > div > input{
+    font-size: 22px;
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    background-color: #f5f7fa;
+    height: 40px;
+    width: 130%;
+}
+
+.innerinputbox > div > button{
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 22px;
+    background-color: rgb(0, 186, 171);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#hrline {
+    margin: 25px 0px;
+    color: #e9edf3;
+}
+
+.googleinputbox {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 6px 10px; 
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.googleinputbox img {
+    width: 60px;
+}
+
+.googleinputbox p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#alonechilddiv > div > .lastText {
+    color: rgb(117, 112, 112);
+}
+
+/* for small screen */
+
+@media screen and (min-width:0px) and (max-width: 290px) {
+    #aloneparentdiv {
+        width: 95%;
+        height: max-content;
+    }
+
+    #alonechilddiv {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .innerinputbox > div > input{
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+    }
+
+    .innerinputbox > div > button{
+        font-size: 16px;
+        padding: 7px;
+    }
+}
+
+
+
+@media screen and (min-width:291px) and (max-width: 600px) {
+    #aloneparentdiv {
+        width: 95%;
+        height: max-content;
+    }
+
+    #alonechilddiv {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .innerinputbox > div > input{
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+    }
+
+    .innerinputbox > div > button{
+        font-size: 16px;
+        padding: 7px;
+    }
+}
+
+/* for medium screen */
+
+
+@media screen and (min-width:601px) and (max-width: 900px) {
+    #aloneparentdiv {
+        width: 85%;
+        height: max-content;
+    }
+
+    #alonechilddiv {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .innerinputbox > div > input{
+        font-size: 14px;
+        padding: 8px;
+        width: 110%;
+    }
+
+    .innerinputbox > div > button{
+        font-size: 16px;
+        padding: 7px;
+    }
+}
+
+/* for medium screen */
+
+@media screen and (min-width:901px) and (max-width: 1099px) {
+    #aloneparentdiv {
+        width: 75%;
+        height: max-content;
+    }
+
+    #alonechilddiv {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .innerinputbox > div > input{
+        font-size: 16px;
+        padding: 10px;
+        width: 120%;
+    }
+
+    .innerinputbox > div > button{
+        font-size: 18px;
+        padding: 9px;
+    }
+}
+
+
+
+#badgeicon {
+    margin: 15px auto;
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#badgeicon > div {
+    width: 80px;
+}
+
+#badgeicon > div > img {
+    width: 100%;
+}
+
+
+#curveimg {
+    margin-bottom: 20px;
+}
+
+#curveimg > img {
+    width: 100%;
+}
+
+#wholeFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+    padding: 20px 0px;
+    font-family: sans-serif, 'Arial Narrow Bold';
+    font-weight: 400;
+    box-sizing: border-box;
+}
+#wholeFooter > div {
+    width: 190px;
+}
+
+#wholeFooter > div > p {
+   margin: 20px 0px;
+}
+
+#wholeFooter > #fourth, #fifth {
+    width: 220px;
+}
+
+#wholeFooter > #sixth {
+    width: 230px;
+}
+
+
+#wholeFooter h3 {
+    font-size: 13px;
+    color: rgb(0, 186, 171);
+}
+
+#wholeFooter p {
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+#wholeFooter p:hover {
+    color: rgb(0, 186, 171);
+    font-weight: 500;
+}
+
+#last_footer_div {
+    width: 94%;
+    margin: auto;
+}
+
+#last_footer_div > hr {
+    color: #8B99AD;
+}
+
+.bottomDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.left-footer-div {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.left-footer-div > img {
+    width: 89px;
+}
+
+.left-footer-div > p {
+    margin-left: 30px;
+    font-size: 16px; 
+}
+
+.right-footer-div {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    width: 400px;
+    align-items: center;
+}
+
+.right-footer-div > img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.right-footer-div > i {
+    margin-right: 15px;
+}
+
+#lowerBottom {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #00baab;
+}
+
+
+#lowerBottom > i {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width:0px) and (max-width:950px) {
+    .right-footer-div {
+        justify-content: flex-start;
+        
+    }
+    
+}
