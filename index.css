@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid a img {
+  width: 120px;
+  margin-left: 100px;
+  margin-right: 170px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#playerbtn {
+  margin: auto;
+  /* margin: auto 350px; */
+  margin-top: 20px;
+  /* border: 2px solid red; */
+}
+#playerbtn > .videoPlayer {
+  border: none;
+  color: none;
+  width: 100%;
+}
