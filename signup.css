@@ -1,0 +1,48 @@
+#popup {
+width: 35%;
+    display: none;
+    position: fixed;
+    height: 55%;
+    top: 20%;
+    left: 30%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    border-radius: 10px;
+  background-image: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
+
+}
+#popup img{
+    display: block;
+    width: 17%;
+    margin:auto;
+    padding:5%;
+    margin-top: 6%;
+}
+#popup h1{
+    margin:0px 8% ;
+    text-align: center;
+    font-size:50px;
+}
+#inputDiv{
+    background-color: rgb(240,244,246);
+   
+    margin: 8% 4%;
+    border-radius: 10px;
+}
+#inputDiv input{
+    font-size: medium;
+    width: 65%;
+    padding: 4% 2%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(240,244,246);
+}
+#inputDiv button{
+    font-size: medium;
+    border: none;
+    padding: 2.5% 5%;
+    border-radius:10px;
+    color: white;
+    background-color: rgb(1,187,171);
+}
