@@ -1,19 +1,24 @@
+
 function formOpen() {
   document.getElementById("popup").style.display = "block";
-  // document.getElementById("blur").style.filter = "blur(1px)";
+  document.getElementById("hide").style.filter = "blur(5px)";
+
 }
+
+
 function border() {
   document.getElementById("inputDiv").style.border =
     " 1px solid rgb(1,187,171)";
 }
 
-
+document.getElementById("getStarted").addEventListener("click",submit);
 
 function submit() {
   if(document.getElementById("email").value!=0){
   var ei = document.getElementById("email").value;
   localStorage.setItem("emailId", ei);
   console.log(ei,"jio");
+  document.getElementById("hide").style.display = "none";
   document.getElementById("shiftOtp").style.display = "none";
   document.getElementById("Otp").style.display = "block";
 
@@ -35,16 +40,9 @@ function otpVerify() {
 
   }
  
-// function setprofile() {
-//   document.getElementById("shiftOtp").style.display = "none";
-//   document.getElementById("Otp").style.display = "none";
-//   document.getElementById("profile").style.display = "none";
-//   document.getElementById("workspaceDisplay").style.display = "block";
-// }
-/*store masai database*/
 
 // let token = localStorage.getItem("token");
-let demo = localStorage.getItem("emailId");
+let demo = localStorage.getItem("emailId")||"";
 console.log(demo,"id");
 
 const getUserdetails = () => {
@@ -74,7 +72,7 @@ const registerUser = async (user) => {
     alert(userData.message);
   } else {
     alert(userData.message);
-     location = "./login.html";
+    //  location = "./login.html";
   }
 };
 // document.getElementById("registerBtn").addEventListener("submit", getUserdetails);
@@ -91,3 +89,7 @@ function changeColor(){
   }
 }
 //color
+
+document.getElementById("fourdigit").innerHTML=`
+We’ve sent a 4-digit confirmation code to <span>${demo}</span> It
+          will expire shortly, so enter it soon.`

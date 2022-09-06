@@ -1,4 +1,4 @@
-body {
+#parent {
     background-image: url("https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png");
     background-size: 100% 100%;
 }
@@ -124,9 +124,11 @@ body {
 #google:hover {
     text-decoration: 1px solid underline;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 #sso {
     display: block;
     width: 38%;
@@ -149,7 +151,7 @@ a{
 #or:after {
     content: "";
     flex: 1 1;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgb(240, 240, 240);
     margin: auto;
 }
 
@@ -172,5 +174,235 @@ a{
     cursor: pointer;
     border-radius: 5px;
 }
+
 /* end login side */
 
+/* media query */
+@media only screen and (min-width:300px) and (max-width: 600px) {
+
+    /* parent login start */
+
+
+    #parent {
+        display: block;
+        height: 300px;
+        /* margin-top: 100%;
+        margin-bottom: 100%; */
+        position: fixed;
+        top: 150px;
+        bottom: 100px;
+    }
+
+    #parentLogin {
+        width: 100%;
+    }
+
+    #firstdiv {
+    width: 50%;
+    background-color: rgb(253, 248, 247);
+    padding: 1%;
+}
+    #header span {
+        font-size: 3px;
+        padding: 2px 1px;
+
+    }
+
+    #header h3 {
+        font-size: 6px;
+    }
+
+
+    #para {
+        font-size: 7px;
+        margin-top: auto;
+    }
+
+    /* end */
+    
+/* start login side*/
+#secondDiv h2 {
+    margin-top: auto;
+    font-size: 10px;
+}
+
+#secondDiv>label {
+    margin: 3% 2px;
+    font-size: 7px;
+}
+
+#forgot {
+    margin: 1% 2px;
+    font-size: 7px;
+
+}
+
+
+
+#secondDiv input {
+    font-size: 8px;
+    border: 1px solid silver;
+}
+
+#submit {
+    font-size: 7px;
+    padding: 3px;
+
+}
+
+#google {
+    width: 70%;
+font-size: 9%;
+align-items: center;
+margin-left: auto;
+}
+
+#google img {
+    width: 9%;
+    height: 9%;
+
+}
+#sso {
+    font-size: 9%;
+    text-align: center;
+}
+#or {
+    width: 50%;
+    margin: auto;
+    font-size:9%;
+    margin-top: 5%;
+  
+    
+}
+
+
+#dont {
+  
+   font-size: 9%;
+   margin-top: 5%;
+}
+
+#signupforfree {
+    
+    border: 1px solid silver;
+font-size: 9%;
+    padding: 5px 10px;
+    margin-top: 4%;
+
+}
+
+/* end login side */
+
+
+}
+
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+ /* parent login start */
+
+
+ #parent {
+    display: block;
+    height: 300px;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+}
+
+#parentLogin {
+    width: 90%;
+}
+
+#firstdiv {
+width: 50%;
+background-color: rgb(253, 248, 247);
+padding: 1%;
+}
+#header span {
+    font-size: 8px;
+    padding: 4px 3px;
+
+}
+
+#header h3 {
+    font-size: 13px;
+}
+
+
+#para {
+    font-size: 13px;
+    margin-top: auto;
+    font-weight: lighter;
+}
+
+/* end */
+
+/* start login side*/
+#secondDiv h2 {
+font-size: 20px;
+}
+
+#secondDiv>label {
+margin: 3% 2px;
+font-size: 13px;
+}
+
+#forgot {
+margin: 1% 2px;
+font-size: 13px;
+
+}
+
+
+
+#secondDiv input {
+font-size: 11px;
+border: 1px solid silver;
+}
+
+#submit {
+font-size: 14px;
+padding: 6px;
+
+}
+
+#google {
+width: 50%;
+font-size: 11px;
+align-items: center;
+margin-left: auto;
+}
+
+#google img {
+width: 8%;
+height: 8%;
+
+}
+#sso {
+font-size: 10px;
+text-align: center;
+}
+#or {
+width: 50%;
+margin: auto;
+font-size:8px;
+margin-top: 5%;
+
+}
+
+
+#dont {
+font-size: 12px;
+margin-top: 5%;
+}
+
+#signupforfree {
+font-size: 12px;
+padding: 8px 15px;
+margin-top: 4%;
+
+}
+
+/* end login side */
+
+}

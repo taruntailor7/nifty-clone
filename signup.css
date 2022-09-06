@@ -2,10 +2,9 @@
     width: 35%;
     display: none;
     position: fixed;
-    height: 55%;
+    height: 60%;
     top: 20%;
     left: 30%;
-    border: 3px solid #f1f1f1;
     z-index: 9;
     border-radius: 10px;
     background-image: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
@@ -25,8 +24,11 @@
     margin: 0px 8%;
     text-align: center;
     font-size: 50px;
+   
 }
-
+span{
+    color: rgb(0, 0, 0);
+}
 #inputDiv {
     background-color: rgb(240, 244, 246);
 
@@ -56,8 +58,10 @@
 /*end signup first part*/
 #shiftOtp {
     display: block;
+    background-color: white;
+    border:2px solid black;
 }
-
+/*otp start */
 #Otp {
     display: none;
 }
@@ -84,7 +88,7 @@
     font-family: SFProDisplayCustom,SF Pro Text,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 #uppperPart h4{
-    color: rgb(85, 83, 83);
+    color: rgb(175, 168, 168);
 }
 
 #biginput {
@@ -128,9 +132,12 @@ cursor: pointer;
     width: 40%;
     margin: auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 2%;
+    font-weight: lighter;
+    color: rgb(80, 80, 80);
 }
+
 
 
 
@@ -151,26 +158,26 @@ cursor: pointer;
 #avtar {
     width: 20%;
 
-    padding: 20px;
+    padding-top: 20px;
     align-items: center;
     text-align: center;
     margin-right: 5%;
     ;
 }
-#avtar button:hover{
+#avtar h5:hover{
     color: green;
     cursor: pointer;
 }
 
 #avtar img {
     width: 120%;
-   
+   border:1px solid silver;
     border-radius: 5px;
 }
 
-#avtar button {
+#avtar h5 {
 
-    width: 130px;
+    width: 120px;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -229,7 +236,7 @@ cursor: pointer;
 
 #registerBtn {
 
-color: white;
+    color: white;
     display: block;
     border: none;
     padding: 4% 30%;
@@ -246,7 +253,6 @@ color: white;
 #url input{
     width: 85%;
   border: none;
-  /* outline-color: rgb(59, 181, 166); */
   outline: none;
 
 }
@@ -258,75 +264,257 @@ color: white;
 }
 
 /*media query */
-@media only screen and (max-width: 600px) {
-#blur{
-    width: 30%;
-}
+@media only screen and (min-width:300px ) and (max-width: 600px) {
+/*email first part start */
     #popup {
-        width: 50%;
-        display: none;
-        position: fixed;
-        height: 25%;
+        width: 100%;
+        /* height: 60%; */
         top: 20%;
         left: 0;
         right: 0;
-        border: 3px solid #f1f1f1;
         z-index: 9;
-        border-radius: 10px;
-        background-image: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
-        background-size: 100% 100%;
+        
     }
-    
-    
-    #popup img {
-        display: block;
-        width: 17%;
-        margin: auto;
-        padding: 5%;
-        margin-top: 6%;
+    #shiftOtp{
+        border: 5px solid red;
     }
-    
     #popup h1 {
-        margin: 0px 8%;
-        text-align: center;
-        font-size: 10px;
+        font-size: 50px;
     }
-    
-    #inputDiv {
-        background-color: rgb(240, 244, 246);
-    
-        margin: 8% 4%;
-        border-radius: 10px;
-    }
-    
+   
     #inputDiv input {
         font-size: medium;
-        width: 65%;
-        padding: 4% 2%;
-        border: none;
-        border-radius: 10px;
-        outline: none;
-        background-color: rgb(240, 244, 246);
+        width: 55%;
+        padding: 5% 2%;
     }
     
     #inputDiv button {
         font-size: medium;
-        border: none;
-        padding: 2.5% 5%;
-        border-radius: 10px;
-        color: white;
-        background-color: rgb(1, 187, 171);
+        padding: 3% 5%;
     }
+/*email part end*/
+
+    /*otp start */  
+
+    #uppperPart img {
+        width: 10%;
+      
+    }
+    
+    #uppperPart h1 {
+        margin-top: 8%;
+        font-size: smaller;
+    }
+    #uppperPart h4{
+        font-size: 6px;
+    }
+    
+    #biginput {
+        width: 60%;
+    }
+    
     #biginput input {
-        width: 30%;
-        font-size: 10px;
+        font-size: 20px;
     }
+    
+    #verify {
+        width: 35%;
+        padding: 1% 4%;
+        font-weight: lighter;
+    }
+    #littlePara {
+        width: 50%;
+        font-size: 6px;
+      
+    }
+    
+    /*otp end */
+
+    /*prfile start */
+    #avtarDiv {
+        width: 70%;
+
+    }
+    
+    #avtar {
+        width: 20%;
+        margin-top: -20px;
+    }
+    #avtar img{
+        border:1px solid silver;
+    }
+    
+    #avtar h5 {
+        width: 40px;
+        font-size: 5px;
+      margin-left : -7px;
+      padding: auto;
+    }
+    
+    /*user details */
+    
+    #userDetails{
+        width: 50%;
+        padding: 6%;
+    
+    }
+    
+    #userDetails>label {
+        font-size: 8px;
+    }
+    #userDetails label:first-child{
+        margin-top: -20px;
+    }
+     
+    #userDetails input, select  {
+        width: 150%;
+        font-size: 8px;
+      border:1px solid silver;
+    }
+    
+    #userDetails select {
+        width: 160%;
+    }
+    
+    #tc {
+        width: 70%;
+        text-align: center;
+        font-size: 5px;
+        margin-top:70% ;
+    }
+    
+    #registerBtn {
+          width: 100%;
+          margin-left: 63%;
+          margin-top: 10px;
+    
+    }
+   
+    /*profile end*/
+   
+   
 }
 
 /*tab */
-@media only screen and (max-width: 768px) {
-    #biginput input {
-        font-size: 40px;
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    /*email part start*/
+    #popup {
+        width: 80%;
+        top: 20%;
+        left: 10%;
+        right: 0;
+        z-index: 9;
+    }
+    #popup h1 {
+        font-size: 50px;
+    }
+   
+    #inputDiv input {
+        font-size: medium;
+        width: 65%;
+        padding: 3% 2%;
+    }
+    
+    #inputDiv button {
+        font-size: medium;
+        padding: 2% 5%;
 
     }
+
+    /*email end*/
+    /*otp start*/
+    #uppperPart img {
+        width: 10%;
+      
+    }
+    
+    #uppperPart h1 {
+        margin-top: 8%;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    #uppperPart h4{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    
+    #biginput {
+        width: 40%;
+    }
+    
+    #biginput input {
+        font-size: 40px;
+    }
+    
+    #verify {
+        width: 19%;
+        padding: 1% 4%;
+    }
+    #littlePara {
+        width: 50%;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    /*otp end */
+
+        /*prfile start */
+        #avtarDiv {
+            width: 70%;
+            justify-content: space-around;
+        }
+        
+        #avtar {
+            width: 20%;
+            margin-top:-10px;
+        }
+        #avtar img{
+            border:1px solid silver;
+            
+        }
+        
+        #avtar h5 {
+            width: 40px;
+            font-size: 5px;
+          margin-left : -7px;
+          padding: auto;
+        }
+        
+        /*user details */
+        
+        #userDetails{
+            width: 40%;
+            padding: 6%;
+        }
+        
+        #userDetails>label {
+            font-size: 12px;
+        }
+        #userDetails label:first-child{
+            margin-top: -20px;
+        }
+         
+        #userDetails input, select  {
+            width: 100%;
+            font-size: 12px;
+          border:1px solid silver;
+        }
+        
+        #userDetails select {
+            width: 110%;
+        }
+        
+        #tc {
+            width: 90%;
+            text-align: center;
+            font-size: 9px;
+            
+        }
+        
+        #registerBtn {
+              width: 10%;
+              margin-top: 10px;
+        
+        }
+       
+        /*profile end*/
 }
