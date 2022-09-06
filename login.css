@@ -124,7 +124,9 @@ body {
 #google:hover {
     text-decoration: 1px solid underline;
 }
-
+a{
+    text-decoration: none;
+}
 #sso {
     display: block;
     width: 38%;
