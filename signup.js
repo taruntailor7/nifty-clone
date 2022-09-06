@@ -12,15 +12,20 @@ function border() {
 }
 
 document.getElementById("getStarted").addEventListener("click",submit);
-
+let value="";
 function submit() {
   if(document.getElementById("email").value!=0){
   var ei = document.getElementById("email").value;
   localStorage.setItem("emailId", ei);
-  console.log(ei,"jio");
+  value=ei;
   document.getElementById("hide").style.display = "none";
   document.getElementById("shiftOtp").style.display = "none";
   document.getElementById("Otp").style.display = "block";
+  var demo = localStorage.getItem("emailId")||"";
+  document.getElementById("fourdigit").innerHTML=`
+We’ve sent a 4-digit confirmation code to <span>${demo}</span> It
+          will expire shortly, so enter it soon.`;
+          console.log(demo, "after");
 
 }
 else{
@@ -41,20 +46,18 @@ function otpVerify() {
   }
  
 
-// let token = localStorage.getItem("token");
-let demo = localStorage.getItem("emailId")||"";
-console.log(demo,"id");
+
 
 const getUserdetails = () => {
   let user = {
     name: document.getElementById("name").value,
-    email: demo,
+    email: value,
     password: document.getElementById("password").value,
     username: document.getElementById("username").value,
     mobile: document.getElementById("mobile").value,
     description: document.getElementById("description").value,
   };
-  console.log(user);
+   console.log(user);
   registerUser(user);
 };
 
@@ -72,10 +75,9 @@ const registerUser = async (user) => {
     alert(userData.message);
   } else {
     alert(userData.message);
-    //  location = "./login.html";
+      location = "./login.html";
   }
 };
-// document.getElementById("registerBtn").addEventListener("submit", getUserdetails);
 // /*color change */
 
 function changeColor(){
@@ -89,7 +91,11 @@ function changeColor(){
   }
 }
 //color
+var demo = localStorage.getItem("emailId")||"";
+// console.log(demo,"id");
 
-document.getElementById("fourdigit").innerHTML=`
-We’ve sent a 4-digit confirmation code to <span>${demo}</span> It
-          will expire shortly, so enter it soon.`
+
+// document.getElementById("fourdigit").innerHTML=`
+// We’ve sent a 4-digit confirmation code to <span>${demo}</span> It
+//           will expire shortly, so enter it soon.`;
+//           console.log(demo, "after");
