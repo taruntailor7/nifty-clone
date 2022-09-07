@@ -171,4 +171,25 @@
     border-bottom: 1px solid gray;
     padding-bottom: 15px;
 }
+@media screen and (max-width: 1439px){
+
+}
+@media only screen and (min-width: 600px) and (max-width:1024px){
+    .fa-solid{
+        display: none;
+    }
+    #createBtn{
+        font-size:12px;
+        margin-left: 5px;
+    }
+    #logout{
+        font-size:12px;
+    }
+    #leftBar{
+        width: 16%;
+        /* border: 1px solid blue; */
+        padding: 15px;
+        background:#1E2648;  
+    }
+}
 
