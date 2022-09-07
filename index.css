@@ -1,7 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
+
+#getDemo {
+    color: #02B0A2;
+}
+
 .container-fluid a img {
   width: 120px;
   margin-left: 100px;
@@ -10,9 +16,18 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+#mainContent {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 80%;
+    margin: auto;
+}
 #playerbtn {
   margin: auto;
-  /* margin: auto 350px; */
+  width: 60%;
+  /* margin-left: 250px; */
   margin-top: 20px;
   /* border: 2px solid red; */
 }
@@ -20,4 +35,272 @@
   border: none;
   color: none;
   width: 100%;
+}
+/* #playBtn {
+
+} */
+#middleBox {
+    text-align: center;
+}
+#middleBox > h1 {
+    font:bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#middleBox > h1 > span > img {
+    width: 60px;
+}
+/* #middleBox > .midPara {
+    border: 2px solid red;
+    margin-bottom: 20px;
+} */
+#middleSearch {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 300px;
+    margin-top: 20px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f5;
+    border: none;
+}
+#middleSearch > #searchName {
+    width: 420px;
+    border: none;
+    background-color: #f4f4f5;
+    height: 40px;
+    margin-top: -7px;
+    text-align: left;
+    color: #717171;
+    font-size: large;
+}
+#middleSearch > #searchName:focus {
+    outline: none;
+}
+
+/* #middleSearch > #getStarted:hover {
+    transform: perspective();
+} */
+#middleSearch > #getStarted {
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin-top: -5px;
+    border-radius: 5px;
+    background-color: #02B0A2;
+    color: white;
+}
+#middleSearch > #getStarted:hover {
+    background-color: #09ccbc;
+}
+#googleSignUp {
+    border: 2px solid none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+#googleSignUp img {
+    width: 20px;
+    margin-right: 10px;
+}
+.freeForever {
+    font-size: large; 
+    color: #bbb;
+}
+.joinOver {
+    margin-top: 150px;
+    font-size: medium;
+    font-weight: bolder;
+    color: #717171;
+}
+#logoDiv {
+    display: flex;
+    margin: auto;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+#logoDiv > .imgMidLogo {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* slide show box starts here */
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: 5} 
+  to {opacity: 10}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* slide show end here */
+
+
+.freeForever {
+    margin-bottom: 50px;
+    color: #717171;
+}
+
+
+#byClick {
+    background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    padding: 20px;
+    margin-bottom: 70px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#divClick {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#divA:hover, #divB:hover, #divC:hover, #divD:hover {
+    color: #02B0A2;
+    cursor: pointer;    
+}
+#divA, #divB, #divC, #divD {
+    font: bolder;
+    font-size: x-large;
+}
+#byClick > .tryNifty {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+}
+#byClick > .tryNifty > img {
+    /* border: 2px solid red; */
+    width: 35px;
+    margin-right: 15px;
+}
+#byClick > .tryNifty > h6 {
+    margin-top: 10px;
+}
+#byClick > .tryNifty > h6:hover {
+    color: #02B0A2;
+    cursor: pointer;
+}
+.verticleLine {
+    border: .5px solid grey;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 1px;
+}
+
+#byClick2 {
+    background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    padding: 20px;
+    margin-bottom: 70px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#divClick2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#divE:hover, #divF:hover, #divG:hover, #divH:hover {
+    color: #02B0A2;
+    cursor: pointer;    
+}
+#divE, #divF, #divG, #divH {
+    font: bolder;
+    font-size: x-large;
+}
+#byClick2 > .tryNifty2 {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+}
+#byClick2 > .tryNifty2 > img {
+    /* border: 2px solid red; */
+    width: 35px;
+    margin-right: 15px;
+}
+#byClick2 > .tryNifty2 > h6 {
+    margin-top: 10px;
+}
+#byClick2 > .tryNifty2 > h6:hover {
+    color: #02B0A2;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024) {
+    #playerbtn {
+        
+    }
 }

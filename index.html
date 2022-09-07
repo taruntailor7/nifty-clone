@@ -15,7 +15,6 @@
     />
 
     <link rel="stylesheet" href="index.css" />
-    
   </head>
   <body>
     <!-- navbar start here -->
@@ -27,6 +26,9 @@
             src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg"
             alt="nifty-logo"
         /></a>
+        <div id="playBtn">
+          <img src="" alt="" />
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,16 +61,17 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Features
               </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#abc">Discussions</a></li>
+                <li><a class="dropdown-item" href="#">Tasks</a></li>
+                <li><a class="dropdown-item" href="#">Reporting</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Docs</a>
                 </li>
               </ul>
             </li>
@@ -82,20 +85,21 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Uses Cases
               </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Agile Development</a></li>
+                <li><a class="dropdown-item" href="#">Digital Agencies</a></li>
+                <li><a class="dropdown-item" href="#">Client Management</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Marketing Teams</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -116,7 +120,7 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
             <li class="nav-item dropdown">
               <a
@@ -127,18 +131,31 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Resources
               </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Apps</a></li>
+                <li><a class="dropdown-item" href="#">Integrations</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Security</a>
                 </li>
               </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Got Clients?</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a id="getDemo" class="nav-link" href="#">Get a Demo</a>
             </li>
           </ul>
         </div>
@@ -148,57 +165,179 @@
     <!-- end -->
     <!-- home page -->
 
-    <div id="playerbtn">
-      <!-- Button trigger modal -->
-      <button
-        type="button"
-        class="videoPlayer"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        <img
-          src="https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp"
-          alt="video"
-        />
-      </button>
+    <div id="mainContent">
+      <div id="playerbtn">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="videoPlayer"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <img
+            src="https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp"
+            alt="video"
+          />
+        </button>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <iframe
-                width="470"
-                height="315"
-                src="https://www.youtube.com/embed/5GaV5EZX22o"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <iframe
+                  width="470"
+                  height="315"
+                  src="https://www.youtube.com/embed/5GaV5EZX22o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="middleBox">
+        <h1>
+          The ultimate project management
+          <span
+            ><img
+              src="https://niftypm.com/_nuxt/img/large@1x.78d6e11.png"
+              alt="OS logo"
+          /></span>
+        </h1>
+
+        <span class="midPara"
+          >Stop switching between Roadmaps, Tasks, Docs, Chats, & other tools.
+          <br />
+          Nifty is one app to unite teams, goals, and actions in one
+          place.</span
+        >
+
+        <div id="middleSearch">
+          <input id="searchName" type="text" placeholder="name@company.com" />
+          <button id="getStarted">Get Started</button>
+        </div>
+
+        <div id="googleSignUp">
+          <img
+            src="https://imgs.search.brave.com/I3u5hLmIXZTST3EJiw1xsqRWEvb2HQz86qodPflPhPo/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/cGEtUnhBaEcxUHlk/QVczSEFZMzVnSGFI/YSZwaWQ9QXBp"
+            alt="google logo"
+          />
+          <span class="signUpWrite">Sign up with Google</span>
+        </div>
+
+        <span class="freeForever">Free forever. No credit card required</span>
+
+        <h3 class="joinOver">JOIN OVER 20,000 HIGHLY PRODUCTIVE TEAMS</h3>
+
+        <div id="logoDiv">
+          <img
+            class="imgMidLogo"
+            src="https://niftypm.com/_nuxt/img/logo-verizon.b7c8a9c.svg"
+            alt="img1"
+          />
+          <img
+            class="imgMidLogo"
+            src="https://niftypm.com/_nuxt/img/logo-pd.e35bded.svg"
+            alt="img2"
+          />
+          <img
+            class="imgMidLogo"
+            src="https://niftypm.com/_nuxt/img/logo-emovis.895c86e.svg"
+            alt="img3"
+          />
+          <img
+            class="imgMidLogo"
+            src="https://niftypm.com/_nuxt/img/logo-vmware.b3363fd.svg"
+            alt="img4"
+          />
+          <img
+            class="imgMidLogo"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNhY2JhZDAiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K"
+            alt="img5"
+          />
+          <img
+            class="imgMidLogo"
+            src="https://niftypm.com/_nuxt/img/logo-loreal.8cc4fed.svg"
+            alt="img6"
+          />
+          <img
+            class="imgMidLogo"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiNhY2JhZDAiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg=="
+            alt="img7"
+          />
+        </div>
+
+        <div class="verticleLine"></div>
+
+        <h4 id="abc" class="freeForever">SAY GOODBYE TO STATUS MEETINGS</h4>
+
+        
+      </div>
+
+      <div id="byClick">
+
+        <div id="divClick">
+          <div id="divA">Discussions</div>
+          <div id="divB">Tasks</div>
+          <div id="divC">Reporting</div>
+          <div id="divD">Docs</div>
+        </div>
+
+        <div id="visible">
+
+        </div>
+        <div class="tryNifty">
+          <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="nifty-logo-icon">
+          <h6 class="tryNiftyHead">Try Nifty now. Thank us later ></h6>
+        </div>
+      </div>
+
+      <div class="verticleLine"></div>
+
+      <h4 id="abc" class="freeForever">BUILT FOR EVERY TEAM</h4>
+
+      <div id="byClick2">
+
+        <div id="divClick2">
+          <div id="divE">Discussions</div>
+          <div id="divF">Tasks</div>
+          <div id="divG">Reporting</div>
+          <div id="divH">Docs</div>
+        </div>
+
+        <div id="visible2">
+
+        </div>
+        <div class="tryNifty2">
+          <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="nifty-logo-icon">
+          <h6 class="tryNiftyHead2">Try Nifty now. Thank us later ></h6>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
