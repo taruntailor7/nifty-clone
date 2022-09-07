@@ -35,7 +35,7 @@ const login = async (userData)=>{
         localStorage.setItem("username",userData.username);
         localStorage.setItem("token", loginRes.token);
         alert("Login successfully!");
-        // location = "./index.html";
+        location = "./dashboard.html";
     }
     // console.log(loginRes.error,"err");
     // console.log(loginRes.message,"msg");

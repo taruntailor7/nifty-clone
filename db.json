@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "name": "Front-end ",
+      "id": 1
+    }
+  ],
+  "developers": [
+    {
+      "developer": "raj",
+      "projectId": "1",
+      "id": 1
+    }
+  ],
+  "tasks": [
+    {
+      "taskk": "homepage",
+      "developerName": "raj",
+      "projectId": "1",
+      "id": 2
+    }
+  ]
+}
