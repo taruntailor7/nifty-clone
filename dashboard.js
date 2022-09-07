@@ -37,7 +37,7 @@ const managerFunctionalities = async()=>{
         let projectObj = {
             name : document.getElementById("proName").value,
         }
-        let projectRes = await fetch ("http://localhost:3000/projects",{
+        let projectRes = await fetch ("https://nifty-clone.herokuapp.com/projects",{
             method: "POST",
             body: JSON.stringify(projectObj),
             headers: {
@@ -52,7 +52,7 @@ const managerFunctionalities = async()=>{
     document.getElementById("createBtn").addEventListener("click", project);
 
     const showProject = async ()=>{
-        let projRes =  await fetch("http://localhost:3000/projects");
+        let projRes =  await fetch("https://nifty-clone.herokuapp.com/projects");
         let proj =  await projRes.json();
         console.log(proj);
         proj.map((element)=>{
@@ -69,7 +69,7 @@ const managerFunctionalities = async()=>{
     let projectId = localStorage.getItem("projectId");
     const addDevelopers = async (employeeObj)=>{
         // alert("Invited");
-        let developerRes = await fetch (`http://localhost:3000/projects/${projectId}/developers`,{
+        let developerRes = await fetch (`https://nifty-clone.herokuapp.com/projects/${projectId}/developers`,{
             method: "POST",
             body: JSON.stringify(employeeObj),
             headers: {
@@ -129,7 +129,7 @@ const developerFunctionalities = async()=>{
     let user = await roleRes.json();
     console.log(user.name);
 
-    let tasksRes = await fetch("http://localhost:3000/tasks");
+    let tasksRes = await fetch("https://nifty-clone.herokuapp.com/tasks");
     let tasks = await tasksRes.json();
     console.log(tasks);
     let task = tasks.filter((element)=>{

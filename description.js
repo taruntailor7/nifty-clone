@@ -11,12 +11,12 @@ document.getElementById("username").innerText = "Hey, "+username;
 
 const projectManager = ()=>{
     const showProject = async ()=>{
-        let projectRes = await fetch(`http://localhost:3000/projects/${projectId}`);
+        let projectRes = await fetch(`https://nifty-clone.herokuapp.com/projects/${projectId}`);
         let project = await projectRes.json();
         console.log(project);
         document.getElementById("projectName").innerText = project.name;
     
-        let developerRes = await fetch (`http://localhost:3000/projects/${projectId}/developers`);
+        let developerRes = await fetch (`https://nifty-clone.herokuapp.com/projects/${projectId}/developers`);
         let developers = await developerRes.json();
         console.log(developers,"developers");
         developers.map((element)=>{
@@ -46,7 +46,7 @@ const projectManager = ()=>{
             developerName : document.getElementById("developersList").value,
         }
         console.log(taskObj, "taskobj");
-        await fetch(`http://localhost:3000/projects/${projectId}/tasks`,{
+        await fetch(`https://nifty-clone.herokuapp.com/projects/${projectId}/tasks`,{
             method : "POST",
             body: JSON.stringify(taskObj),
             headers: {
@@ -58,7 +58,7 @@ const projectManager = ()=>{
     
     const showAllTask = async()=>{
         document.getElementById("showTasks").innerHTML = "";
-        let allTasksRes = await fetch(`http://localhost:3000/projects/${projectId}/tasks`);
+        let allTasksRes = await fetch(`https://nifty-clone.herokuapp.com/projects/${projectId}/tasks`);
         let allTasks = await allTasksRes.json();
         console.log(allTasks , "tasks");
     
@@ -86,7 +86,7 @@ const projectManager = ()=>{
     document.getElementById("addTask").addEventListener("click", addTask)
     
     const removeTask = async(id)=>{
-        await fetch(`http://localhost:3000/tasks/${id}`,{
+        await fetch(`https://nifty-clone.herokuapp.com/tasks/${id}`,{
             method: "DELETE",
         });
         showAllTask();

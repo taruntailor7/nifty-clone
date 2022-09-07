@@ -7,136 +7,21 @@
     {
       "name": "Backend",
       "id": 2
-    },
-    {
-      "name": "demo",
-      "id": 3
-    },
-    {
-      "name": "demo2",
-      "id": 4
     }
   ],
   "developers": [
     {
-      "developer": "shbham",
+      "developer": "raj",
       "projectId": "null",
       "id": 1
     },
     {
-      "developer": "shubham",
+      "developer": "tarun",
       "projectId": "1",
       "id": 2
-    },
-    {
-      "developer": "shubham",
-      "projectId": "1",
-      "id": 3
-    },
-    {
-      "developer": "shubham",
-      "projectId": "2",
-      "id": 4
-    },
-    {
-      "developer": "raj",
-      "projectId": "2",
-      "id": 5
-    },
-    {
-      "developer": "tarun",
-      "projectId": "2",
-      "id": 6
-    },
-    {
-      "developer": "sukanta",
-      "projectId": "2",
-      "id": 7
-    },
-    {
-      "developer": "abdul",
-      "projectId": "2",
-      "id": 8
-    },
-    {
-      "developer": "abdul",
-      "projectId": "1",
-      "id": 9
-    },
-    {
-      "developer": "mohit",
-      "projectId": "2",
-      "id": 10
-    },
-    {
-      "developer": "iuh",
-      "projectId": "2",
-      "id": 11
-    },
-    {
-      "developer": "abdul",
-      "projectId": "4",
-      "id": 12
-    },
-    {
-      "developer": "mohiy",
-      "projectId": "4",
-      "id": 13
-    },
-    {
-      "developer": "raj",
-      "projectId": "4",
-      "id": 14
     }
   ],
   "tasks": [
-    {
-      "taskk": "Homepage",
-      "developerName": "shubham",
-      "projectId": "1",
-      "id": 1
-    },
-    {
-      "taskk": "footer",
-      "developerName": "shubham",
-      "projectId": "2",
-      "id": 2
-    },
-    {
-      "taskk": "task",
-      "developerName": "abdul",
-      "projectId": "2",
-      "id": 3
-    },
-    {
-      "taskk": "ok",
-      "developerName": "mohit",
-      "projectId": "2",
-      "id": 4
-    },
-    {
-      "taskk": "dfgh",
-      "developerName": "abdul",
-      "projectId": "4",
-      "id": 5
-    },
-    {
-      "taskk": "dfg",
-      "developerName": "mohiy",
-      "projectId": "4",
-      "id": 6
-    },
-    {
-      "taskk": "gf",
-      "developerName": "raj",
-      "projectId": "4",
-      "id": 7
-    },
-    {
-      "taskk": "dfkb",
-      "developerName": "abdul",
-      "projectId": "4",
-      "id": 8
-    }
+    
   ]
 }
