@@ -313,6 +313,8 @@ img {vertical-align: middle;}
     background-color: white;
     color: black;
     text-decoration: none;
+    margin-right: 10px;
+    width: 80px;
 }
 #loginSignUp > .btn1:hover {
     background-color: #02B0A2;
@@ -327,11 +329,13 @@ img {vertical-align: middle;}
     background-color: #09ccbc;
     color: white;
     text-decoration: none;
+    width: 100px;
 }
 
 #loginSignUp > .btn2:hover {
     background-color: #02B0A2;
 }
+
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
     
