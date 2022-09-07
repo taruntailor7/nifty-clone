@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dashboard.html">
+    <script src="https://kit.fontawesome.com/9c260d5759.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <!-- Navbar Section -->
+    <div id="nav">
+        <div>Todays</div>
+        <div><input type="text" id="search" placeholder="Search"></div>
+        <div>
+            <button id="createBtn"><i class="fa-solid fa-plus"></i> Create</button>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Conten Section -->
+    <div id="container">
+        <div id="leftBar">
+            <div id="workload"><i class="fa-solid fa-chart-column"></i><a href="">Workloads</a></div>
+            <div id="calender"><i class="fa-regular fa-calendar-days"></i><a href="">Calender</a></div>
+            <div id="calender"><i class="fa-solid fa-list-check"></i></i><a href="./dashboard.html">All Projects</a></div>
+            <div id="allTasks"><i class="fa-solid fa-bars"></i><a href="#">All Tasks</a></div>
+            <div id="myWorks"><i class="fa-solid fa-list-check"></i><a href="">My Work</a></div>
+        </div>
+        <div id="rightBar">
+            <div id="rightNav">
+               <h2>My Work</h2>
+            </div>
+            <div>
+                <h1 id="tas">Hey, Project</h1>
+            </div>
+            <div id="createProject">
+                <input type="text" id="proName" placeholder="Project Name">
+                <button id="crtprjt">Create</button>
+            </div>
+            <div id="projects">
+                
+            </div>
+            <div id="addDeveloper">
+                <input type="text" id="developer1" placeholder="Add Developer Name 1">
+                <button id="addDev1">Add</button><br>
+                <!-- <input type="text" id="developer2" placeholder="Add Developer Name 2">
+                <button id="addDev2">Add</button><br>
+                <input type="text" id="developer3" placeholder="Add Developer Name 3">
+                <button id="addDev3">Add</button><br> -->
+                <!-- <button id="next">Next</button> -->
+            </div>
+            <div id="projectDesc">
+                <h1>Project Description</h1>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
 </body>
 </html>
 <script src="./dashboard.js"></script>
