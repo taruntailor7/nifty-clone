@@ -54,6 +54,7 @@ const projectManager = ()=>{
             },
         });
         console.log(taskObj,"taskonj"); 
+        location.reload();
     }
     
     const showAllTask = async()=>{
