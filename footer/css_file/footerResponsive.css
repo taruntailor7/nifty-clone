@@ -1,5 +1,4 @@
 
-@import url(./footer.css);
 
 /* media queries for lower bottom icon */
 
@@ -9,11 +8,11 @@
     /* for big standard screen */
 
     #circlediv {
-        width: 90%;
+        width: 92%;
       }
 
     #text_title {
-        width: 40%;
+        width: 45%;
     }
 
     #pic_div {
@@ -50,7 +49,7 @@
          height: fit-content;
      }
      #title {
-         width: 40%;
+         width: 65%;
      }
      /*  */
      #aloneparentdiv {
@@ -88,11 +87,11 @@
      /* for laptop standard screen */
 
      #circlediv {
-        width: 86%;
+        width: 95%;
       }
 
     #text_title {
-        width: 42%;
+        width: 40%;
     }
 
     #pic_div {
@@ -129,7 +128,7 @@
          height: fit-content;
      }
      #title {
-         width: 60%;
+         width: 64%;
      }
      #reddiv {
          width: 25%;
@@ -177,7 +176,7 @@
       }
 
       #text_title {
-        width: 75%;
+        width: 95%;
         height: max-content;
         margin-bottom: 25px;
     }
@@ -212,14 +211,14 @@
     }
  
      #product_hunt {
-        width: 90%;
+        width: 94%;
          height: fit-content;
      }
      #title {
-         width: 70%;
+         width: 80%;
      }
      #title > h1 {
-         font-size: 40px;
+         font-size: 30px;
      }
      #reddiv {
          width: 30%; 
@@ -268,7 +267,7 @@
       }
 
       #text_title {
-        width: 85%;
+        width: 95%;
         height: max-content;
         margin-bottom: 25px;
     }
@@ -285,7 +284,7 @@
          justify-content: center;
          margin: auto;
          margin-top: 120px;
-         margin-bottom: 25px;
+         margin-bottom: 15px;
      }
      #productChildDiv {
          display: grid;
@@ -294,7 +293,7 @@
          width: 95%;
      }
      #title > h1 {
-         font-size: 36px;
+         font-size: 30px;
          margin-bottom: 20px;
          font-weight: 600;
      }
