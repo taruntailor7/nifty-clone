@@ -246,12 +246,16 @@ img {vertical-align: middle;}
 #visible {
     width: 100%;
 }
+#visible > h1 {
+    font-size: 10px;
+}
 #visible > img {
     width: 100%;
 }
 #visible2 {
     width: 100%;
 }
+
 #visible2 > img {
     width: 100%;
 }
@@ -380,6 +384,11 @@ img {vertical-align: middle;}
     }
     #middleBox > #logoDiv {
         grid-template-columns: repeat(2, 1fr);
+    }
+    #middleBox > #logoDiv > .imgMidLogo {
+        width: 50%;
+        margin: auto;
+        margin-top: 6%;
     }
 }
 
