@@ -9,9 +9,9 @@
 }
 
 .container-fluid a img {
-  width: 120px;
-  margin-left: 100px;
-  margin-right: 170px;
+  width: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -19,30 +19,33 @@
 
 #mainContent {
     border: 2px solid red;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
     width: 80%;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);    
 }
-#playerbtn {
-    border: 2px solid green;
-  margin: auto;
-  width: 60%;
-  /* margin-left: 250px; */
-  margin-top: 20px;
-  /* border: 2px solid red; */
+#mainContent > #playerbtn {
+    /* border: 2px solid green; */
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
 }
-#playerbtn > .videoPlayer {
-  border: none;
-  color: none;
-  width: 100%;
+#mainContent > #playerbtn > .videoPlayer {
+    border: none;
+    width: 90%;
+    margin: auto;
 }
-/* #playBtn {
+#mainContent > #playerbtn > .videoPlayer > .imgbtn {
+    /* border: 10px solid pink; */
+    width: 100%;
+    margin: auto;
+}
 
-} */
 #middleBox {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid purple; */
     text-align: center;
-    border: 2px solid purple;
     justify-content: center;
 }
 #middleBox > h1 {
@@ -51,18 +54,20 @@
     margin-bottom: 20px;
 }
 #middleBox > h1 > span > img {
-    width: 60px;
+    width: 7%;
 }
-/* #middleBox > .midPara {
-    border: 2px solid red;
+#middleBox > .midPara {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
     margin-bottom: 20px;
-} */
-#middleSearch {
+}
+#middleBox > #middleSearch {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
     justify-content: space-between;
-    width: 600px;
-    margin-left: 300px;
+    width: 60%;
+    margin: auto;
     margin-top: 20px;
     height: 50px;
     padding: 10px;
@@ -70,8 +75,8 @@
     background-color: #f4f4f5;
     border: none;
 }
-#middleSearch > #searchName {
-    width: 420px;
+#middleBox > #middleSearch > #searchName {
+    width: 70%;
     border: none;
     background-color: #f4f4f5;
     height: 40px;
@@ -80,18 +85,20 @@
     color: #717171;
     font-size: large;
 }
+#middleBox > #middleSearch > #getStarted {
+    width: 30%;
+    margin: auto;
+}
+
 #middleSearch > #searchName:focus {
     outline: none;
 }
 
-/* #middleSearch > #getStarted:hover {
-    transform: perspective();
-} */
 #middleSearch > #getStarted {
     border: none;
-    width: 200px;
+    width: 80%;
     height: 40px;
-    margin-top: -5px;
+    margin: auto;
     border-radius: 5px;
     background-color: #02B0A2;
     color: white;
@@ -102,10 +109,10 @@
 #googleSignUp {
     border: 2px solid none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    margin-left: 300px;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 40px;
-    width: 600px;
+    width: 60%;
     height: 50px;
     background-color: white;
     border-radius: 10px;
@@ -120,25 +127,26 @@
     font-size: large; 
     color: #bbb;
 }
-.joinOver {
+#middleBox > .joinOver {
     margin-top: 150px;
     font-size: medium;
     font-weight: bolder;
     color: #717171;
 }
-#logoDiv {
-    display: flex;
+#middleBox > #logoDiv {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* border: 2px dashed purple; */
+    width: 80%;
     margin: auto;
-    margin-left: 200px;
     margin-top: 100px;
     margin-bottom: 200px;
 }
-#logoDiv > .imgMidLogo {
-    width: 100px;
-    height: 50px;
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+#middleBox > #logoDiv > .imgMidLogo {
+    width: 80%;
+    /* height: 50px; */
+    margin: 2%;
+    padding: 2%;
 }
 
 /* slide show box starts here */
@@ -189,14 +197,16 @@ img {vertical-align: middle;}
 /* slide show end here */
 
 
-.freeForever {
+#middleBox > .freeForever {
     margin-bottom: 50px;
     color: #717171;
 }
 
 
-#byClick {
+#mainContent > #byClick {
     background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 80%;
+    margin: auto;
     padding: 20px;
     margin-bottom: 70px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -205,8 +215,9 @@ img {vertical-align: middle;}
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-#divClick {
+#mainContent > #byClick > #divClick {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -219,7 +230,7 @@ img {vertical-align: middle;}
     font: bolder;
     font-size: x-large;
 }
-#byClick > .tryNifty {
+#mainContent > #byClick > .tryNifty {
     display: flex;
     justify-content: center;
     border-bottom-left-radius: 20px;
@@ -232,15 +243,27 @@ img {vertical-align: middle;}
     align-items: center;
     background-color: white;
 }
-#byClick > .tryNifty > img {
+#visible {
+    width: 100%;
+}
+#visible > img {
+    width: 100%;
+}
+#visible2 {
+    width: 100%;
+}
+#visible2 > img {
+    width: 100%;
+}
+#mainContent > #byClick > .tryNifty > img {
     /* border: 2px solid red; */
     width: 35px;
     margin-right: 15px;
 }
-#byClick > .tryNifty > h6 {
+#mainContent > #byClick > .tryNifty > h6 {
     margin-top: 10px;
 }
-#byClick > .tryNifty > h6:hover {
+#mainContent > #byClick > .tryNifty > h6:hover {
     color: #02B0A2;
     cursor: pointer;
 }
@@ -252,8 +275,10 @@ img {vertical-align: middle;}
     width: 1px;
 }
 
-#byClick2 {
+#mainContent > #byClick2 {
     background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 80%;
+    margin: auto;
     padding: 20px;
     margin-bottom: 70px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -262,8 +287,9 @@ img {vertical-align: middle;}
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-#divClick2 {
+#mainContent > #byClick2 > #divClick2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -343,29 +369,25 @@ img {vertical-align: middle;}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #mainContent {
-        width: 80%;
+        width: 90%;
 
     }
     #middleBox {
-        width: 80%;
+        width: 100%;
+    }
+    #byClick {
+        width: 100%;
+    }
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
-    #mainContent {
-        width: 80%;
-    }
-    #middleBox {
-        width: 80%;
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(1, 1fr);
     }
     #byClick {
-        width: 80%;
-    }
-    #byClick {
-        /* width: 80%; */
-        width: 200px;
-    }
-    #visible, #visible2 {
-        width: 200px;
+        width: 100%;
     }
 }
