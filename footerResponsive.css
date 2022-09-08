@@ -1,0 +1,330 @@
+
+@import url(./footer/footer.css);
+
+/* media queries for lower bottom icon */
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+   
+    /* every thing is fine */
+    /* for big standard screen */
+     #product_hunt {
+         height: fit-content;
+     }
+     #title {
+         width: 40%;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 50%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 10px;
+         width: 120%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+ 
+     .right-footer-div {
+         margin-right: 70px;
+     }
+     #lowerBottom {
+         right: 40px;
+     }
+    
+ }
+ 
+ @media screen and (min-width:769px) and (max-width:1024px) {
+     /* for laptop standard screen */
+     
+     #product_hunt {
+         height: fit-content;
+     }
+     #title {
+         width: 60%;
+     }
+     #reddiv {
+         width: 25%;
+         margin-top: 45px;
+     }
+      /*  */
+      #aloneparentdiv {
+         width: 55%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 10px;
+         width: 120%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 20px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:426px) and (max-width:768px) {
+ 
+      /* for tablet standard screen */
+ 
+     #product_hunt {
+         height: fit-content;
+     }
+     #title {
+         width: 70%;
+     }
+     #title > h1 {
+         font-size: 40px;
+     }
+     #reddiv {
+         width: 30%; 
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 75%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 8px;
+         width: 110%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+     #wholeFooter {
+         grid-template-columns: repeat(5,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:376px) and (max-width:425px) { 
+     /* for mobile standard screen */
+ 
+     #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 25px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 36px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     #reddiv {
+         width: 70%;
+         display: flex;
+         margin: auto;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 90%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 6px;
+         width: 90%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 16px;
+         padding: 7px;
+     }
+ 
+     /*  */
+ 
+     #wholeFooter {
+         grid-template-columns: repeat(2,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:321px) and (max-width:375px) {
+    
+     #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 25px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 94%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 6px;
+         width: 90%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 16px;
+         padding: 6px;
+     }
+ 
+     /*  */
+     #reddiv {
+         width: 60%;
+         display: flex;
+         margin: auto;
+     }
+     #wholeFooter {
+         grid-template-columns: repeat(2,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+     
+ }
+ 
+ @media screen and (min-width:0px) and (max-width:320px) {
+     #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 25px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     #reddiv {
+         width: 70%;
+         display: flex;
+         margin: auto;
+     }
+ 
+     /*  */
+ 
+     #aloneparentdiv {
+         width: 95%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 14px;
+         padding: 6px;
+         width: 80%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 12px;
+         padding: 4px;
+         border-radius: 4px;
+     }
+ 
+     /*  */
+     #wholeFooter {
+         grid-template-columns: repeat(1,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+     
+ }
