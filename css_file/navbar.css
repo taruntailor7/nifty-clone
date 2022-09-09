@@ -7,7 +7,13 @@
 #getDemo {
     color: #02B0A2;
 }
-
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    padding-top: 7px;
+    padding-bottom:7px;
+}
 .container-fluid a img {
   width: 25%;
   margin-left: 10%;
@@ -23,6 +29,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1,1fr);    
+    margin-top: 50px;
 }
 #mainContent > #playerbtn {
     /* border: 2px solid green; */
@@ -385,7 +392,7 @@
 }
 #loginSignUp > .btn1 {
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
@@ -402,17 +409,17 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-#loginSignUp > .btn1:hover {
+/* #loginSignUp > .btn1:hover {
     background-color: #02B0A2;
-    color: white;
-}
+    color: 02B0A2;
+} */
 .btn1 a:hover{
-    color: white;
+    color: #02B0A2;
 }
 
 #loginSignUp > .btn2 {
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #09ccbc;
@@ -440,7 +447,30 @@
     }
     #middleBox {
         width: 95%;
+       
     }
+    #middleBox > #middleSearch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+ 
+    #middleBox > #middleSearch > #searchName {
+        width: 70%;
+        font-size: small;
+        align-items: center;
+    }
+    #middleBox > #middleSearch > #getStarted {
+        padding:0px;
+        margin: 0px;
+        width: 30%;
+        font-size: small;
+    }
+    #googleSignUp{
+        width: 100%;
+    }
+
     #byClick {
         width: 95%;
     }
