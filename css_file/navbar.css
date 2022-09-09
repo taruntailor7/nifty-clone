@@ -1,48 +1,51 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   text-align: center;
-}
+} */
 
 #getDemo {
     color: #02B0A2;
 }
 
 .container-fluid a img {
-  width: 120px;
-  margin-left: 100px;
-  margin-right: 170px;
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 #mainContent {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    width: 80%;
+    grid-template-columns: repeat(1,1fr);    
+}
+#mainContent > #playerbtn {
+    /* border: 2px solid green; */
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+}
+#mainContent > #playerbtn > .videoPlayer {
+    border: none;
+    width: 90%;
     margin: auto;
 }
-#playerbtn {
-    border: 2px solid green;
-  margin: auto;
-  width: 60%;
-  /* margin-left: 250px; */
-  margin-top: 20px;
-  /* border: 2px solid red; */
+#mainContent > #playerbtn > .videoPlayer > .imgbtn {
+    /* border: 10px solid pink; */
+    width: 100%;
+    margin: auto;
 }
-#playerbtn > .videoPlayer {
-  border: none;
-  color: none;
-  width: 100%;
-}
-/* #playBtn {
 
-} */
 #middleBox {
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid purple; */
     text-align: center;
-    border: 2px solid purple;
     justify-content: center;
 }
 #middleBox > h1 {
@@ -51,27 +54,29 @@
     margin-bottom: 20px;
 }
 #middleBox > h1 > span > img {
-    width: 60px;
+    width: 7%;
 }
-/* #middleBox > .midPara {
-    border: 2px solid red;
+#middleBox > .midPara {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
     margin-bottom: 20px;
-} */
-#middleSearch {
+}
+#middleBox > #middleSearch {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
     justify-content: space-between;
-    width: 600px;
-    margin-left: 300px;
+    width: 60%;
+    margin: auto;
     margin-top: 20px;
     height: 50px;
     padding: 10px;
     border-radius: 5px;
     background-color: #f4f4f5;
-    border: none;
+    /* border: 2px solid red; */
 }
-#middleSearch > #searchName {
-    width: 420px;
+#middleBox > #middleSearch > #searchName {
+    width: 50%;
     border: none;
     background-color: #f4f4f5;
     height: 40px;
@@ -80,21 +85,28 @@
     color: #717171;
     font-size: large;
 }
+#middleBox > #middleSearch > #getStarted {
+    width: 30%;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-right: -10px;
+    margin-top: -6px;
+}
+
 #middleSearch > #searchName:focus {
     outline: none;
 }
 
-/* #middleSearch > #getStarted:hover {
-    transform: perspective();
-} */
 #middleSearch > #getStarted {
     border: none;
-    width: 200px;
+    width: 80%;
     height: 40px;
-    margin-top: -5px;
+    margin: auto;
+    padding: 10px;
     border-radius: 5px;
     background-color: #02B0A2;
     color: white;
+    /* border: 2px solid red; */
 }
 #middleSearch > #getStarted:hover {
     background-color: #09ccbc;
@@ -102,10 +114,10 @@
 #googleSignUp {
     border: 2px solid none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    margin-left: 300px;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 40px;
-    width: 600px;
+    width: 60%;
     height: 50px;
     background-color: white;
     border-radius: 10px;
@@ -120,36 +132,43 @@
     font-size: large; 
     color: #bbb;
 }
-.joinOver {
-    margin-top: 150px;
+#middleBox > .joinOver {
+    /* border: 2px dashed purple; */
+    margin-top: 80px;
     font-size: medium;
     font-weight: bolder;
     color: #717171;
 }
-#logoDiv {
-    display: flex;
+#middleBox > #logoDiv {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* border: 2px dashed purple; */
+    width: 80%;
     margin: auto;
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
-#logoDiv > .imgMidLogo {
-    width: 100px;
-    height: 50px;
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+#middleBox > #logoDiv > .imgMidLogo {
+    width: 80%;
+    /* height: 50px; */
+    margin: 2%;
+    padding: 2%;
+    /* border: 2px dashed purple; */
 }
-
+.midText {
+    text-align: center;
+    margin-bottom: 20px;
+}
 /* slide show box starts here */
 
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+/* body {font-family: Verdana, sans-serif;} */
 .mySlides {display: none;}
-img {vertical-align: middle;}
+/* img {vertical-align: middle;} */
 
 /* Slideshow container */
 .slideshow-container {
+
   max-width: 800px;
   position: relative;
   margin: auto;
@@ -189,14 +208,16 @@ img {vertical-align: middle;}
 /* slide show end here */
 
 
-.freeForever {
+#middleBox > .freeForever {
     margin-bottom: 50px;
     color: #717171;
 }
 
 
-#byClick {
+#mainContent > #byClick {
     background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 90%;
+    margin: auto;
     padding: 20px;
     margin-bottom: 70px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -204,9 +225,11 @@ img {vertical-align: middle;}
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    /* border: 2px dashed purple; */
 }
-#divClick {
+#mainContent > #byClick > #divClick {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -219,7 +242,7 @@ img {vertical-align: middle;}
     font: bolder;
     font-size: x-large;
 }
-#byClick > .tryNifty {
+#mainContent > #byClick > .tryNifty {
     display: flex;
     justify-content: center;
     border-bottom-left-radius: 20px;
@@ -232,15 +255,33 @@ img {vertical-align: middle;}
     align-items: center;
     background-color: white;
 }
-#byClick > .tryNifty > img {
+#visible {
+    width: 100%;
+    text-align: center;
+}
+#visible > h1 {
+    font-size: 10px;
+}
+#visible > img {
+    width: 100%;
+}
+#visible2 {
+    width: 100%;
+    text-align: center;
+}
+
+#visible2 > img {
+    width: 100%;
+}
+#mainContent > #byClick > .tryNifty > img {
     /* border: 2px solid red; */
     width: 35px;
     margin-right: 15px;
 }
-#byClick > .tryNifty > h6 {
+#mainContent > #byClick > .tryNifty > h6 {
     margin-top: 10px;
 }
-#byClick > .tryNifty > h6:hover {
+#mainContent > #byClick > .tryNifty > h6:hover {
     color: #02B0A2;
     cursor: pointer;
 }
@@ -252,8 +293,10 @@ img {vertical-align: middle;}
     width: 1px;
 }
 
-#byClick2 {
+#mainContent > #byClick2 {
     background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 90%;
+    margin: auto;
     padding: 20px;
     margin-bottom: 70px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -261,9 +304,11 @@ img {vertical-align: middle;}
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    /* border: 2px solid red; */
 }
-#divClick2 {
+#mainContent > #byClick2 > #divClick2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -301,6 +346,39 @@ img {vertical-align: middle;}
     color: #02B0A2;
     cursor: pointer;
 }
+
+
+#outerLast {
+    width: 90%;
+    margin: auto;
+    background-color: #eeee;
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+}
+#lastMid {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    border-radius: 30px;
+    width: 85%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    
+}
+#lastMid > div > :nth-child(1) {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#lastMid > div > :nth-child(3) {
+    color: #717171;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+
 #loginSignUp {
     margin: auto;
     justify-content: right;
@@ -316,8 +394,19 @@ img {vertical-align: middle;}
     margin-right: 10px;
     width: 80px;
 }
+.btn1 a{
+    color: black;
+    text-decoration: none;
+}
+.btn2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 #loginSignUp > .btn1:hover {
     background-color: #02B0A2;
+    color: white;
+}
+.btn1 a:hover{
     color: white;
 }
 
@@ -343,29 +432,38 @@ img {vertical-align: middle;}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #mainContent {
-        width: 80%;
+        width: 90%;
 
     }
     #middleBox {
-        width: 80%;
+        width: 95%;
+    }
+    #byClick {
+        width: 95%;
+    }
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #middleBox > #logoDiv > .imgMidLogo {
+        width: 50%;
+        margin: auto;
+        margin-top: 6%;
+    }
+    #lastMid {
+        padding: 30px;
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
-    #mainContent {
-        width: 80%;
-    }
-    #middleBox {
-        width: 80%;
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(1, 1fr);
     }
     #byClick {
-        width: 80%;
+        width: 95%;
     }
-    #byClick {
-        /* width: 80%; */
-        width: 200px;
-    }
-    #visible, #visible2 {
-        width: 200px;
+    .container-fluid{
+       border: 2px solid red;
+       align-items: center;
+       margin: auto;
     }
 }

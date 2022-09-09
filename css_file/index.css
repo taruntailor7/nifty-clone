@@ -1,0 +1,12 @@
+
+/* first navbar raj folder imported */
+
+@import url(./navbar.css);
+
+/* then shubham footer folder imported */
+
+@import url(./footer.css);
+
+/* then in last shubham responsive folder imported */
+
+@import url(./footerResponsive.css);

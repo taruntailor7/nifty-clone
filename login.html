@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css_file/login.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <div id="logobar">
+        <img
+          src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+          alt="logo"
+        />
+      </div>
+
+      <div id="parentLogin">
+        <div id="firstdiv">
+          <span id="header">
+            <span id="first">COMMING SOON</span>
+            <h3>Reporting Dashboard</h3></span
+          >
+          <p id="para">
+            Powerful reporting to keep you on top of your business and workload.
+            Customize your dashboard to gain insights and make informed
+            decisions.
+          </p>
+          <img
+            src="https://nifty.pm/static/media/main.9818dcc508e7ef1f7d96.png"
+            id="loginimg"
+            alt=""
+          />
+        </div>
+        <div id="secondDiv">
+          <h2>Log in to your account</h2>
+          <label for="email">User Name *</label>
+          <input
+            type="email"
+            oninput="dj()"
+            id="username"
+            placeholder="Type your username"
+          />
+          <div id="forgot">
+            <label for="password">Password *</label>
+            <label id="forgot">Forgot?</label>
+          </div>
+
+          <input
+            type="password"
+            oninput="dj()"
+            id="password"
+            placeholder="Password"
+          />
+          <button id="submit" onclick="getUserData()">Log in</button>
+          <div id="google">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgH4W5ek27mLBiC2F8WS9GCmB66UrnH3UwFMonwxxM3w&s"
+              alt=""
+            />
+            Sign in With Google
+          </div>
+          <h3 id="sso">Sign in with SSO</h3>
+
+          <h5 id="or">OR</h5>
+          <h3 id="dont">Don't have an account?</h3>
+          <a href="inbex.html">
+            <button id="signupforfree">Sign up for free</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-<script></script>
+<script src="script_file/login.js"></script>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+/* Navbar Section */
+#nav{
+    width: 100%;
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+    background-color:#111631;
+}
+#nav>:first-child{
+    width: 30%;
+    /* border-top: 1px solid red; */
+    color: white;
+}
+#nav>:nth-child(2){
+    width: 40%;
+    text-align: center;
+}
+#nav>:nth-child(2)>input{
+    padding:5px;
+    background:#363c5b;
+    border: none;
+    width: 80%;
+    border-radius:4px;
+    color:white;
+    margin-top:5px;
+}
+#nav>:nth-child(2)>input::placeholder{
+    color:white;
+}
+#nav>:last-child{
+    width: 30%;
+    /* border: 1px solid white; */
+    margin-top:5px;
+    padding:5px;
+    display: flex;
+    justify-content:flex-end;
+}
+#createBtn{
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    background:#00baab;
+    font-size:16px;
+    color:white;
+    border:none;
+    margin-left: 200px;
+    
+}
+
+/* Content Section */
+#container{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 673px;
+    display: flex;
+}
+#leftBar{
+    width: 16%;
+    /* border: 1px solid blue; */
+    padding: 15px;
+    background:#1E2648;
+}
+#leftBar>div{
+    width: 50%;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+#leftBar>div>a{
+    color:white;
+    text-decoration: none;
+}
+#rightBar{
+    width: 84%;
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+#assigning{
+    display: none;
+    margin-top: 30px;
+}
+#assigning>input,button{
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+}
+#addTask{
+    background-color:#00baab;
+    color:#fff;
+}
+#assignTask{
+    margin-top: 15px;
+}
+#developersList{
+    width: 200px;
+    padding:7px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+}
+#username{
+    margin-top: 10px;
+}
+
+#showTasks{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#showTasks>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:10px;   
+    border-radius: 10px;
+}
+#showTasks>div>p{
+    margin-top:10px;
+}
+#showTasks>div>button{
+    margin-top:10px;
+}
+
+#logout{
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    background:#00baab;
+    font-size:16px;
+    color:white;
+    border:none;
+    /* margin-left: 450; */
+    /* margin-left: 150px; */
+}
+#rightNav{
+    margin:0;
+    width:100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}   
