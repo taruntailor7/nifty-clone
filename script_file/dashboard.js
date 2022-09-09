@@ -47,6 +47,7 @@ const managerFunctionalities = async()=>{
         let project = await projectRes.json();
         console.log(project);
         document.getElementById("createProject").style.display = "none";
+        document.getElementById("logout").style.marginRight="305px";
     }
     document.getElementById("crtprjt").addEventListener("click",createProject);
     document.getElementById("createBtn").addEventListener("click", project);

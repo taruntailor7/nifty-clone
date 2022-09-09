@@ -259,7 +259,7 @@
  
  @media screen and (min-width:376px) and (max-width:425px) { 
      /* for mobile standard screen */
-    
+
      #circlediv {
         width: 85%;
         display: grid;
@@ -418,7 +418,18 @@
  }
  
  @media screen and (min-width:0px) and (max-width:320px) {
-     
+    .innerinputbox{
+        display: flex;
+    }
+    #emailinput {
+        width: 60%;
+      
+        margin-right: -30px;
+    }
+    .innerinputbox button{
+        /* margin-left: -50px; */  
+        padding-left: -200px;
+    }
     #circlediv {
         width: 85%;
         display: grid;
