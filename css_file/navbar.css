@@ -431,6 +431,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-brand{
+        width: 200px;
+      }
     #mainContent {
         width: 90%;
 
@@ -461,9 +464,8 @@
     #byClick {
         width: 95%;
     }
-    .container-fluid{
-     
-       align-items: center;
-       margin: auto;
-    }
+
+  .navbar-brand{
+    width: 200px;
+  }
 }
