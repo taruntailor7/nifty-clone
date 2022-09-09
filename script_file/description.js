@@ -4,7 +4,7 @@ let userRole = localStorage.getItem("userRole");
 let token = localStorage.getItem("token") || "";
 
 if(token === ""){
-    location = "./login.html"
+    location.href = "./login.html";
 }
 
 document.getElementById("username").innerText = "Hey, "+username;
