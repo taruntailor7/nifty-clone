@@ -274,139 +274,13 @@ cursor: pointer;
 
 }
 
-/*media query */
-@media only screen and (min-width:300px ) and (max-width: 600px) {
-/*email first part start */
-    #popup {
-        width: 100%;
-        height: 60%;
-        top: 20%;
-        left: 0;
-        right: 0;
-        z-index: 9;
-        
-    }
 
-    #popup h1 {
-        font-size: 50px;
-    }
-   
-    #inputDiv input {
-        font-size: medium;
-        width: 55%;
-        padding: 5% 2%;
-    }
-    
-    #inputDiv button {
-        font-size: medium;
-        padding: 3% 5%;
-    }
-/*email part end*/
-
-    /*otp start */  
-
-    #uppperPart img {
-        width: 10%;
-      
-    }
-    
-    #uppperPart h1 {
-        margin-top: 8%;
-        font-size: smaller;
-    }
-    #uppperPart h4{
-        font-size: 6px;
-    }
-    
-    #biginput {
-        width: 60%;
-    }
-    
-    #biginput input {
-        font-size: 20px;
-    }
-    
-    #verify {
-        width: 35%;
-        padding: 1% 4%;
-        font-weight: lighter;
-    }
-    #littlePara {
-        width: 50%;
-        font-size: 6px;
-      
-    }
-    
-    /*otp end */
-
-    /*prfile start */
-    #avtarDiv {
-        width: 70%;
-
-    }
-    
-    #avtar {
-        width: 20%;
-        margin-top: -20px;
-    }
-    #avtar img{
-        border:1px solid silver;
-    }
-    
-    #avtar h5 {
-        width: 40px;
-        font-size: 5px;
-      margin-left : -7px;
-      padding: auto;
-    }
-    
-    /*user details */
-    
-    #userDetails{
-        width: 50%;
-        padding: 6%;
-    
-    }
-    
-    #userDetails>label {
-        font-size: 8px;
-    }
-    #userDetails label:first-child{
-        margin-top: -20px;
-    }
-     
-    #userDetails input, select  {
-        width: 150%;
-        font-size: 8px;
-      border:1px solid silver;
-    }
-    
-    #userDetails select {
-        width: 160%;
-    }
-    
-    #tc {
-        width: 70%;
-        text-align: center;
-        font-size: 5px;
-        margin-top:70% ;
-    }
-    
-    #registerBtn {
-          width: 100%;
-          margin-left: 63%;
-          margin-top: 10px;
-    
-    }
-   
-    /*profile end*/
-   
-   
-}
 /*big*/
 @media only screen and (min-width:788px) and (max-width: 1111px) {
     #popup { 
-        height: 55%;}
+        /* height: 55%; */
+        height: max-content;
+    }
     #inputDiv input {
         font-size: medium;
         width: 56%;
@@ -422,7 +296,7 @@ cursor: pointer;
  }
 
 /*tab */
-@media only screen and (min-width:601px) and (max-width: 788px) {
+@media only screen and (min-width:601px) and (max-width: 787px) {
     /*email part start*/
     #popup {
         width: 80%;
@@ -545,3 +419,134 @@ cursor: pointer;
        
         /*profile end*/
 }
+
+/*media query */
+@media only screen and (min-width:300px ) and (max-width: 600px) {
+    /*email first part start */
+        #popup {
+            width: 100%;
+            /* height: 60%; */
+            height: max-content;
+            top: 20%;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            
+        }
+    
+        #popup h1 {
+            font-size: 50px;
+        }
+       
+        #inputDiv input {
+            font-size: medium;
+            width: 55%;
+            padding: 5% 2%;
+        }
+        
+        #inputDiv button {
+            font-size: medium;
+            padding: 3% 5%;
+        }
+    /*email part end*/
+    
+        /*otp start */  
+    
+        #uppperPart img {
+            width: 10%;
+          
+        }
+        
+        #uppperPart h1 {
+            margin-top: 8%;
+            font-size: smaller;
+        }
+        #uppperPart h4{
+            font-size: 6px;
+        }
+        
+        #biginput {
+            width: 60%;
+        }
+        
+        #biginput input {
+            font-size: 20px;
+        }
+        
+        #verify {
+            width: 35%;
+            padding: 1% 4%;
+            font-weight: lighter;
+        }
+        #littlePara {
+            width: 50%;
+            font-size: 6px;
+          
+        }
+        
+        /*otp end */
+    
+        /*prfile start */
+        #avtarDiv {
+            width: 70%;
+    
+        }
+        
+        #avtar {
+            width: 20%;
+            margin-top: -20px;
+        }
+        #avtar img{
+            border:1px solid silver;
+        }
+        
+        #avtar h5 {
+            width: 40px;
+            font-size: 5px;
+          margin-left : -7px;
+          padding: auto;
+        }
+        
+        /*user details */
+        
+        #userDetails{
+            width: 50%;
+            padding: 6%;
+        
+        }
+        
+        #userDetails>label {
+            font-size: 8px;
+        }
+        #userDetails label:first-child{
+            margin-top: -20px;
+        }
+         
+        #userDetails input, select  {
+            width: 150%;
+            font-size: 8px;
+          border:1px solid silver;
+        }
+        
+        #userDetails select {
+            width: 160%;
+        }
+        
+        #tc {
+            width: 70%;
+            text-align: center;
+            font-size: 5px;
+            margin-top:70% ;
+        }
+        
+        #registerBtn {
+              width: 100%;
+              margin-left: 63%;
+              margin-top: 10px;
+        
+        }
+       
+        /*profile end*/
+       
+       
+    }
