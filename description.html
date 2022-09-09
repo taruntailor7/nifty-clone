@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9c260d5759.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css_file/description.css">
+    <title>Dashboard</title>
+    <link rel = "icon" href = 
+    "https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" 
+            type = "image/x-icon">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div id="nav">
+        <div id="today">Todays</div>
+        <div><input type="text" id="search" placeholder="Search"></div>
+        <div id="log">
+            <!-- <button id="createBtn"><i class="fa-solid fa-plus"></i> Create</button> -->
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Conten Section -->
+    <div id="container">
+        <div id="leftBar">
+            <div id="workload"><i class="fa-solid fa-chart-column"></i><a href="">Workloads</a></div>
+            <div id="calender"><i class="fa-regular fa-calendar-days"></i><a href="">Calender</a></div>
+            <div id="calender"><i class="fa-regular fa-calendar-days"></i><a href="./dashboard.html">All Projects</a></div>
+            <div id="allTasks"><i class="fa-solid fa-bars"></i><a href="./description.html">All Tasks</a></div>
+            <div id="myWorks"><i class="fa-solid fa-list-check"></i><a href="">My Work</a></div>
+        </div>
+        <div id="rightBar">
+            <div id="rightNav">
+                <h2>My Work</h2>
+            </div>
+            <div id="assignTask">
+                <h1 id="projectName"></h1>
+                <p id="username"></p>
+                <select name="" id="developersList">
+                    <option value="">Select</option>
+                </select>
+            </div>
+            <div id="assigning">
+                <input type="text" id="assigne" placeholder="Enter Task">
+                <button id="addTask">Add Task</button>
+            </div>
+            <div id="showTasks">
+
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+</body>
+</html>
+<script src="./script_file/description.js"></script>

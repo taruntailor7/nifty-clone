@@ -1,0 +1,505 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+} */
+
+#getDemo {
+    color: #02B0A2;
+}
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    padding-top: 7px;
+    padding-bottom:7px;
+    z-index: 1000;
+}
+.container-fluid a img {
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#mainContent {
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);    
+    margin-top: 50px;
+}
+#mainContent > #playerbtn {
+    /* border: 2px solid green; */
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+}
+#mainContent > #playerbtn > .videoPlayer {
+    border: none;
+    width: 90%;
+    margin: auto;
+}
+#mainContent > #playerbtn > .videoPlayer > .imgbtn {
+    /* border: 10px solid pink; */
+    width: 100%;
+    margin: auto;
+}
+
+#middleBox {
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid purple; */
+    text-align: center;
+    justify-content: center;
+}
+#middleBox > h1 {
+    font:bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#middleBox > h1 > span > img {
+    width: 7%;
+}
+#middleBox > .midPara {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#middleBox > #middleSearch {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f5;
+    /* border: 2px solid red; */
+}
+#middleBox > #middleSearch > #searchName {
+    width: 50%;
+    border: none;
+    background-color: #f4f4f5;
+    height: 40px;
+    margin-top: -7px;
+    text-align: left;
+    color: #717171;
+    font-size: large;
+}
+#middleBox > #middleSearch > #getStarted {
+    width: 30%;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-right: -10px;
+    margin-top: -6px;
+}
+
+#middleSearch > #searchName:focus {
+    outline: none;
+}
+
+#middleSearch > #getStarted {
+    border: none;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #02B0A2;
+    color: white;
+    /* border: 2px solid red; */
+}
+#middleSearch > #getStarted:hover {
+    background-color: #09ccbc;
+}
+#googleSignUp {
+    border: 2px solid none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+#googleSignUp img {
+    width: 20px;
+    margin-right: 10px;
+}
+.freeForever {
+    font-size: large; 
+    color: #bbb;
+}
+#middleBox > .joinOver {
+    /* border: 2px dashed purple; */
+    margin-top: 80px;
+    font-size: medium;
+    font-weight: bolder;
+    color: #717171;
+}
+#middleBox > #logoDiv {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* border: 2px dashed purple; */
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#middleBox > #logoDiv > .imgMidLogo {
+    width: 80%;
+    /* height: 50px; */
+    margin: 2%;
+    padding: 2%;
+    /* border: 2px dashed purple; */
+}
+.midText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* slide show box starts here */
+
+* {box-sizing: border-box;}
+/* body {font-family: Verdana, sans-serif;} */
+.mySlides {display: none;}
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: 5} 
+  to {opacity: 10}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* slide show end here */
+
+
+#middleBox > .freeForever {
+    margin-bottom: 50px;
+    color: #717171;
+}
+
+
+#mainContent > #byClick {
+    background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 70px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border: 2px dashed purple; */
+}
+#mainContent > #byClick > #divClick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#divA:hover, #divB:hover, #divC:hover, #divD:hover {
+    color: #02B0A2;
+    cursor: pointer;    
+}
+#divA, #divB, #divC, #divD {
+    font: bolder;
+    font-size: x-large;
+}
+#mainContent > #byClick > .tryNifty {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+}
+#visible {
+    width: 100%;
+    text-align: center;
+}
+#visible > h1 {
+    font-size: 10px;
+}
+#visible > img {
+    width: 100%;
+}
+#visible2 {
+    width: 100%;
+    text-align: center;
+}
+
+#visible2 > img {
+    width: 100%;
+}
+#mainContent > #byClick > .tryNifty > img {
+    /* border: 2px solid red; */
+    width: 35px;
+    margin-right: 15px;
+}
+#mainContent > #byClick > .tryNifty > h6 {
+    margin-top: 10px;
+}
+#mainContent > #byClick > .tryNifty > h6:hover {
+    color: #02B0A2;
+    cursor: pointer;
+}
+.verticleLine {
+    border: .5px solid grey;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 1px;
+}
+
+#mainContent > #byClick2 {
+    background-image: linear-gradient(120deg, #ECF9FE,#F9DCE1);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 70px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border: 2px solid red; */
+}
+#mainContent > #byClick2 > #divClick2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#divE:hover, #divF:hover, #divG:hover, #divH:hover {
+    color: #02B0A2;
+    cursor: pointer;    
+}
+#divE, #divF, #divG, #divH {
+    font: bolder;
+    font-size: x-large;
+}
+#byClick2 > .tryNifty2 {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+}
+#byClick2 > .tryNifty2 > img {
+    /* border: 2px solid red; */
+    width: 35px;
+    margin-right: 15px;
+}
+#byClick2 > .tryNifty2 > h6 {
+    margin-top: 10px;
+}
+#byClick2 > .tryNifty2 > h6:hover {
+    color: #02B0A2;
+    cursor: pointer;
+}
+
+
+#outerLast {
+    width: 90%;
+    margin: auto;
+    background-color: #eeee;
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+}
+#lastMid {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    border-radius: 30px;
+    width: 85%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    
+}
+#lastMid > div > :nth-child(1) {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#lastMid > div > :nth-child(3) {
+    color: #717171;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+
+#loginSignUp {
+    margin: auto;
+    justify-content: right;
+}
+#loginSignUp > .btn1 {
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    width: 80px;
+}
+.btn1 a{
+    color: black;
+    text-decoration: none;
+}
+.btn2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* #loginSignUp > .btn1:hover {
+    background-color: #02B0A2;
+    color: 02B0A2;
+} */
+.btn1 a:hover{
+    color: #02B0A2;
+}
+
+#loginSignUp > .btn2 {
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #09ccbc;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+}
+
+#loginSignUp > .btn2:hover {
+    background-color: #02B0A2;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1110px) {
+   
+    .navbar-nav{
+        margin-left: -210px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-brand{
+        width: 200px;
+      }
+    #mainContent {
+        width: 90%;
+
+    }
+    #middleBox {
+        width: 95%;
+       
+    }
+    #middleBox > #middleSearch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+ 
+    #middleBox > #middleSearch > #searchName {
+        width: 70%;
+        font-size: small;
+        align-items: center;
+    }
+    #middleBox > #middleSearch > #getStarted {
+        padding:0px;
+        margin: 0px;
+        width: 30%;
+        font-size: small;
+    }
+    #googleSignUp{
+        width: 100%;
+    }
+
+    #byClick {
+        width: 95%;
+    }
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #middleBox > #logoDiv > .imgMidLogo {
+        width: 50%;
+        margin: auto;
+        margin-top: 6%;
+    }
+    #lastMid {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    #middleBox > #logoDiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #byClick {
+        width: 95%;
+    }
+
+  .navbar-brand{
+    width: 200px;
+  }
+}

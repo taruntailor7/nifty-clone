@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body {
+    margin: 0px;
+    width: 100%;
+} */
+
+.shubham-middle-section {
+    background-color: white;
+}
+
+.shubham-bottom-section {
+    background-color: #f5f7fa;
+}
+
+#circlediv {
+    width: 94%;
+    height: 100vh;
+    border: none;
+    background: linear-gradient(to right, #fdf9fa 21%, #f2fbfa 71%);
+    border-radius: 16px;
+    padding: 18px 10px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+#text_title {
+    width: 40%;
+    padding: 0px 10px;
+    height: 90vh;
+    align-items: center;
+    margin: auto;
+}
+
+#text_title > h1 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+#text_title > p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+#text_title > h2 {
+ color: #00baab;
+ font-size: 20px;
+}
+
+#text_title > h2 > i {
+   margin-right: 20px; 
+   font-size: 12px;
+}
+
+/* logon implement */
+
+.c1 {
+    position: absolute; 
+    bottom: 40px;
+    left: -10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px;
+}
+
+.c2{
+    position: absolute; 
+    right: 40px;
+    bottom: -30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px;   
+}
+.c3 {
+    position: absolute; 
+    top: -70px;
+    left: 150px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px; 
+}
+.c4 {
+    position: absolute; 
+    top: 60px;
+    left: -10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px; 
+}
+.c5{
+    position: absolute; 
+    top: 140px;
+    right: -30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px; 
+}
+.c6{
+    position: absolute; 
+    top: 0px;
+    right: 18px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px; 
+}
+.c7{
+    position: absolute; 
+    bottom: -85px;
+    left: 160px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 45px 0px; 
+}
+
+.c1 > img, .c2 > img, .c3 > img, .c4 > img, .c5 > img, .c6 > img, .c7 > img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    /* padding: 18px; */
+}
+
+/* circle moving section */
+
+#pic_div {
+    width: 45%;
+    padding: 0px 20px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#fifth_div {
+    height: 410px;
+    width: 410px;
+    background: transparent;
+    position: absolute;
+    animation: mymove 20s forwards linear infinite;
+    border: 2px dashed green;
+    border-radius: 50%;
+    background-color: #f1faf9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+  
+@keyframes mymove {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+#fourth_div {
+    /* position: absolute; */
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: rgb(252, 252, 252);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+    
+
+#third_div {
+
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: rgb(252, 252, 252);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#second_div {
+
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px dashed #ddd;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#first_div {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#first_div > img {
+    width: 100%;
+}
+
+/* moving section end */
+
+
+#product_hunt {
+    height: fit-content;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 20px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#product_para > p {
+    color: #00baab;
+    font-size: 18px;
+}
+
+#productChildDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#title {
+    width: 55%;
+}
+
+#title > h1 {
+    font-size: 42px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#reddiv {
+    width: 20%;
+    margin-top: 45px;
+}
+
+#reddiv > img {
+    width: 100%;
+}
+
+
+/* both sliding section starts here */
+
+#slidingleft {
+    margin:6px 8px;
+    display: flex;
+    width: max-content;
+}
+
+.textdiv {
+    height: 190px;
+    width: max-content;
+    border: none;
+    border-radius: 12px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #ccffcc 22%, #ffffff 77%);
+}
+
+.textdiv > p {
+    margin: 6px 0px;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 18px;
+}
+
+.textdiv > h2 {
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: rgb(70, 55, 55);
+    font-weight: 100;
+    margin: 2px 0px;
+}
+
+/* color gredient code for seperated div */
+
+#textdiv1 {
+    background: radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
+}
+
+#textdiv2 {
+    background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%);
+}
+
+#textdiv3 {
+    background: linear-gradient(109.5deg, rgb(229, 233, 177) 11.2%, rgb(223, 205, 187) 100.2%);
+}
+
+#textdiv4 {
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+}
+
+#textdiv5 {
+    background: radial-gradient(circle at 10% 20%, rgb(111, 231, 176) 0%, rgb(154, 198, 242) 100.2%);
+}
+
+#textdiv6 {
+    background: linear-gradient(108.9deg, rgb(163, 217, 221) 10.4%, rgb(174, 250, 182) 56.2%, rgb(238, 243, 220) 86.1%);
+}
+
+#textdiv7 {
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(241, 241, 241) 50.8%, rgb(253, 255, 255) 77.6%, rgb(216, 235, 223) 100.7%);
+}
+
+#textdiv8 {
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+}
+
+#textdiv9 {
+    background: linear-gradient(to bottom left, #ccffcc 32%, #ffffcc 61%);
+}
+
+#textdiv10 {
+    background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+
+/* only for get started section */
+#aloneparentdiv {
+    height: 80vh;
+    width: 55%;
+    border: 1px solid rgb(0, 186, 171);
+    border-radius: 16px;
+    background-color: white;
+    margin: auto;
+    margin-top: 150px;
+    
+}
+
+#alonechilddiv {
+    height: 60vh;
+    width: 82%;
+    border-radius: 16px;
+    background-color: white;
+    margin: 40px auto;
+}
+
+#alonechilddiv > div > img {
+    width: 50px;
+    display: block;
+    margin: 12px auto;
+}
+
+#alonechilddiv > div > h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: monospace;
+    margin: 6px 0px;
+}
+
+#alonechilddiv > div > p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: monospace;
+}
+
+.innerinputbox {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border: 1px solid#f5f7fa;
+    /* outline: none; */
+    border-radius: 16px;
+    padding: 6px 10px; 
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerinputbox > div > input{
+    font-size: 22px;
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    background-color: #f5f7fa;
+    height: 40px;
+    width: 130%;
+}
+
+.innerinputbox > div > button{
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 22px;
+    background-color: rgb(0, 186, 171);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#hrline {
+    margin: 25px 0px;
+    color: #e9edf3;
+}
+
+.googleinputbox {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 6px 10px; 
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.googleinputbox img {
+    width: 60px;
+}
+
+.googleinputbox p {
+    font-size: 18px;
+    font-weight: 600;
+    margin:auto
+
+}
+
+#alonechilddiv > div > .lastText {
+    color: rgb(117, 112, 112);
+}
+
+/* only for badge icon section */
+
+#badgeicon {
+    margin: 15px auto;
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#badgeicon > div {
+    width: 80px;
+}
+
+#badgeicon > div > img {
+    width: 100%;
+}
+
+/* only for curve image background pic section */
+
+#curveimg {
+    margin-bottom: 20px;
+}
+
+#curveimg > img {
+    width: 100%;
+}
+
+/* upper footer section table format */
+
+#wholeFooter {
+    width: 92%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: auto;
+    padding: 20px 0px;
+    font-family: sans-serif, 'Arial Narrow Bold';
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#wholeFooter > div > p {
+   margin: 20px 0px;
+}
+
+#wholeFooter h3 {
+    font-size: 13px;
+    color: rgb(0, 186, 171);
+}
+
+#wholeFooter p {
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+#wholeFooter p:hover {
+    color: rgb(0, 186, 171);
+    font-weight: 500;
+}
+
+/* last line bottom footer section */
+
+#last_footer_div {
+    width: 94%;
+    margin: auto;
+}
+
+#last_footer_div > hr {
+    color: #8B99AD;
+}
+
+.bottomDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.left-footer-div {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.left-footer-div > img {
+    width: 89px;
+}
+
+.left-footer-div > p {
+    margin-left: 30px;
+    font-size: 16px; 
+}
+
+.right-footer-div {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    width: fit-content;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.right-footer-div > img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.right-footer-div > i {
+    margin-right: 15px;
+}
+
+/* only for lower bottom icon section */
+
+#lowerBottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #00baab;
+}
+
+
+#lowerBottom > i {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 22px;
+    color: white;
+    cursor: pointer;
+}

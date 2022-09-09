@@ -1,0 +1,520 @@
+
+
+/* media queries for lower bottom icon */
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+   
+    /* every thing is fine */
+    /* for big standard screen */
+
+    #circlediv {
+        width: 92%;
+      }
+
+    #text_title {
+        width: 45%;
+    }
+
+    #pic_div {
+        width: 48%;
+    }
+
+    #fifth_div {
+        height: 410px;
+        width: 410px;
+    }
+    
+    #fourth_div {
+        height: 310px;
+        width: 310px;
+    }
+        
+    #third_div {
+        height: 220px;
+        width: 220px;
+    }
+    
+    #second_div {
+        height: 130px;
+        width: 130px;
+    }
+    
+    #first_div {
+        height: 50px;
+        width: 50px;
+    }
+
+     #product_hunt {
+        width: 90%;
+         height: fit-content;
+     }
+     #title {
+         width: 65%;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 50%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 10px;
+         width: 120%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+ 
+     .right-footer-div {
+         margin-right: 70px;
+     }
+     #lowerBottom {
+         right: 40px;
+     }
+    
+ }
+ 
+ @media screen and (min-width:769px) and (max-width:1024px) {
+     /* for laptop standard screen */
+
+     #circlediv {
+        width: 95%;
+      }
+
+    #text_title {
+        width: 40%;
+    }
+
+    #pic_div {
+        width: 50%;
+    }
+
+    #fifth_div {
+        height: 410px;
+        width: 410px;
+    }
+    
+    #fourth_div {
+        height: 310px;
+        width: 310px;
+    }
+        
+    #third_div {
+        height: 220px;
+        width: 220px;
+    }
+    
+    #second_div {
+        height: 130px;
+        width: 130px;
+    }
+    
+    #first_div {
+        height: 50px;
+        width: 50px;
+    }
+
+     #product_hunt {
+        width: 90%;
+         height: fit-content;
+     }
+     #title {
+         width: 64%;
+     }
+     #reddiv {
+         width: 25%;
+         margin-top: 45px;
+     }
+      /*  */
+      #aloneparentdiv {
+         width: 55%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 10px;
+         width: 120%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 20px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:426px) and (max-width:768px) {
+ 
+      /* for tablet standard screen */
+
+      #circlediv {
+        width: 85%;
+        display: grid;
+        height: max-content;
+      }
+
+      #text_title {
+        width: 95%;
+        height: max-content;
+        margin-bottom: 25px;
+    }
+
+    #pic_div {
+        width: 75%;
+    }
+
+    #fifth_div {
+        height: 350px;
+        width: 350px;
+    }
+    
+    #fourth_div {
+        height: 260px;
+        width: 260px;
+    }
+        
+    #third_div {
+        height: 180px;
+        width: 180px;
+    }
+    
+    #second_div {
+        height: 110px;
+        width: 110px;
+    }
+    
+    #first_div {
+        height: 50px;
+        width: 50px;
+    }
+ 
+     #product_hunt {
+        width: 94%;
+         height: fit-content;
+     }
+     #title {
+         width: 80%;
+     }
+     #title > h1 {
+         font-size: 30px;
+     }
+     #reddiv {
+         width: 30%; 
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 75%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 80%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 8px;
+         width: 110%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 18px;
+         padding: 9px;
+     }
+     /*  */
+     #wholeFooter {
+         grid-template-columns: repeat(4,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 20px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:376px) and (max-width:425px) { 
+     /* for mobile standard screen */
+
+     #circlediv {
+        width: 85%;
+        display: grid;
+        height: max-content;
+      }
+
+      #text_title {
+        width: 95%;
+        height: max-content;
+        margin-bottom: 25px;
+    }
+
+    /* circle moving hide */
+    #pic_div {
+        display: none;
+    }
+
+     #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 15px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 30px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     #reddiv {
+         width: 70%;
+         display: flex;
+         margin: auto;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 90%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 6px;
+         width: 90%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 16px;
+         padding: 7px;
+     }
+ 
+     /*  */
+ 
+     #wholeFooter {
+         grid-template-columns: repeat(2,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+ 
+ }
+ 
+ @media screen and (min-width:321px) and (max-width:375px) {
+    
+    #circlediv {
+        width: 85%;
+        display: grid;
+        height: max-content;
+      }
+
+      #text_title {
+        width: 85%;
+        height: max-content;
+        margin-bottom: 25px;
+    }
+
+     /* circle moving hide */
+     #pic_div {
+        display: none;
+    }
+
+     #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 25px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     /*  */
+     #aloneparentdiv {
+         width: 94%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 16px;
+         padding: 6px;
+         width: 90%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 16px;
+         padding: 6px;
+     }
+ 
+     /*  */
+     #reddiv {
+         width: 60%;
+         display: flex;
+         margin: auto;
+     }
+     #wholeFooter {
+         grid-template-columns: repeat(2,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+     
+ }
+ 
+ @media screen and (min-width:0px) and (max-width:320px) {
+    .innerinputbox{
+        display: flex;
+    }
+    #emailinput {
+        width: 60%;
+      
+        margin-right: -30px;
+    }
+    .innerinputbox button{
+        /* margin-left: -50px; */  
+        padding-left: -200px;
+    }
+    #circlediv {
+        width: 85%;
+        display: grid;
+        height: max-content;
+      }
+
+      #text_title {
+        width: 85%;
+        height: max-content;
+        margin-bottom: 25px;
+    }
+    #text_title > h1 {
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    #text_title > h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+     /* circle moving hide */
+     #pic_div {
+        display: none;
+    }
+    
+    #product_hunt {
+         height: fit-content;
+         width: 95%;
+         text-align: left;
+         justify-content: center;
+         margin: auto;
+         margin-top: 120px;
+         margin-bottom: 25px;
+     }
+     #productChildDiv {
+         display: grid;
+     }
+     #title {
+         width: 95%;
+     }
+     #title > h1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         font-weight: 600;
+     }
+     #reddiv {
+         width: 70%;
+         display: flex;
+         margin: auto;
+     }
+ 
+     /*  */
+ 
+     #aloneparentdiv {
+         width: 95%;
+         height: max-content;
+     }
+ 
+     #alonechilddiv {
+         width: 90%;
+         height: fit-content;
+     }
+ 
+     .innerinputbox > div > input{
+         font-size: 14px;
+         padding: 6px;
+         width: 80%;
+     }
+ 
+     .innerinputbox > div > button{
+         font-size: 12px;
+         padding: 4px;
+         border-radius: 4px;
+     }
+ 
+     /*  */
+     #wholeFooter {
+         grid-template-columns: repeat(1,1fr);
+     }
+     .right-footer-div {
+         margin-right: 50px;
+     }
+     #lowerBottom {
+         right: 10px;
+     }
+     
+ }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netify: Project Management</title>
+    <link rel = "icon" href = 
+    "https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" 
+            type = "image/x-icon">
+    <link rel="stylesheet" href="./css_file/signup.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- <button onclick="formOpen()" id="hd">Signup</button> -->
+  <!-- signup start -->
+  
+  <div id="shiftOtp">
+
+    <div id="popup">
+      <img
+        src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg"
+        alt=""
+      />
+      <h1>Get started in less than 1 minute!</h1>
+      <div id="inputDiv">
+        <input
+          onclick="border()"
+          type="email"
+          required
+          id="email"
+          placeholder="name@company.com"
+        />
+        <button id="getStarted" onclick="submit()">Get Started</button>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- signup end -->
+  <!-- signup otp send start  -->
+  <div id="Otp">
+    <div id="uppperPart">
+      <img
+        src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+        alt=""
+      />
+      <h1>Check your email</h1>
+      <h4 id="fourdigit">
+        
+      </h4>
+    </div>
+    <div id="lowerPart">
+      <div id="biginput">
+        <input type="text" id="move1" required />
+        <input type="text" id="move2" required />
+        <input type="text" id="move3" required />
+        <input id="move4" type="text" required />
+      </div>
+
+      <button id="verify" onclick="otpVerify()">Verify</button>
+      <p id="littlePara">
+        Don’t forget to check spam. If the code didn’t come request another
+        one. Still having issues with registration? Check our help guide.
+      </p>
+    </div>
+    <div id="bg"></div>
+  </div>
+  <!-- signup otp end -->
+
+  <!-- start profile -->
+  <div id="profile">
+    <div id="uppperPart">
+      <img
+        src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+        alt=""
+      />
+      <h1>Welcome! First things first...</h1>
+      <h4>
+        Create a profile to personalize how you'll appear on your workspace.
+      </h4>
+    </div>
+
+    <div id="avtarDiv">
+      <div id="avtar" >
+        <img onclick="document.getElementById('getFile').click()"
+          src="https://www.mohawkcollege.ca/sites/default/files/styles/thumbnail/public/default_images/staff-default-thumb.png?itok=sdx_hOg7"
+          alt=""
+        />
+
+        <input type="file" id="getFile" style="display: none" />
+        <!-- <h5>Add Profile Photo</h4> -->
+      </div>
+      <div id="userDetails">
+        <label for="name"> Full Name</label>
+        <input
+          oninput="changeColor()"
+          type="text"
+          id="name"
+          placeholder="Your first & last name..."
+        />
+        <label for="username">User Name</label>
+        <input
+          oninput="changeColor()"
+          type="text"
+          id="username"
+          placeholder="Type your user name "
+        />
+        <label for="password"> Create Password</label>
+        <input
+          oninput="changeColor()"
+          type="password"
+          id="password"
+          placeholder="Mininum 6 characters"
+        />
+        <label for="mobile"> Phone Number</label>
+        <input
+          oninput="changeColor()"
+          type="number"
+          id="mobile"
+          placeholder="Enter phone number"
+        />
+        <label for="role"> Your Role</label>
+        <select oninput="changeColor()" name="Role" id="description">
+          <option value="" disabled selected>Select Work Role</option>
+          <option value="developer">Developer</option>
+          <option value="Product Manager">Product Manager</option>
+        </select>
+        <button id="registerBtn" onclick="getUserdetails()">Next</button>
+      </div>
+    </div>
+    <p id="tc">
+      By clicking the Next button above, you agree to our Terms of Service and
+      Privacy Policy.
+    </p>
+  </div>
+  <!-- end profile -->
+  </body>
+</html>
+<script src="./script_file/signup.js"></script>
+
