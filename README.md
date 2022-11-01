@@ -1,7 +1,11 @@
 # nifty-clone
 
+## [Deployed link](https://niftypm-clone.netlify.app/)
+
+### [Blog](https://medium.com/@shubhamkmit9021/nifty-clone-d47aa302f490)
+
 Team Members
-1 Raj Baghel
-2 Shubham K Rai
-3 Sukanta Ghosh
-4 Tarun Tailor
+- Raj Baghel
+- Shubham K Rai
+- Sukanta Ghosh
+- Tarun Tailor
