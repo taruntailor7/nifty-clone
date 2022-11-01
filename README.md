@@ -6,6 +6,6 @@
 
 Team Members
 - Raj Baghel
-- Shubham K Rai
+- Shubham Kumar Rai
 - Sukanta Ghosh
 - Tarun Tailor
